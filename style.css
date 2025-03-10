@@ -1,0 +1,27 @@
+*{
+    font-family:  "Bricolage Grotesque", sans-serif !important;
+}
+.mackinac{
+    font-family: Mackinac, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+    font-size: 64px !important; 
+}
+.hero-txt{
+    font-family: Mackinac, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+    font-size: 40px !important; 
+    font-weight: 500;
+}
+.feature{
+    font-family: Mackinac, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+    font-size: 22px !important; 
+    font-weight: 500;
+}
+.patrner{
+    font-family: Mackinac, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;;
+}
+.card{
+    background-image: linear-gradient(to bottom right, rgb(255 255 255 / .075), rgb(255 255 255 / .075), rgb(255 255 255 / .2));
+}
+.card:hover{
+    transform: scaleX(1.05);
+    transform: scaleY(1.05);
+}

@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a", "950": "#172554" }
+          }
+        },
+        fontFamily: {
+          'body': [
+            'Inter',
+            'ui-sans-serif',
+            'system-ui',
+            '-apple-system',
+            'system-ui',
+            'Segoe UI',
+            'Roboto',
+            'Helvetica Neue',
+            'Arial',
+            'Noto Sans',
+            'sans-serif',
+            'Apple Color Emoji',
+            'Segoe UI Emoji',
+            'Segoe UI Symbol',
+            'Noto Color Emoji'
+          ],
+          'sans': [
+            'Inter',
+            'ui-sans-serif',
+            'system-ui',
+            '-apple-system',
+            'system-ui',
+            'Segoe UI',
+            'Roboto',
+            'Helvetica Neue',
+            'Arial',
+            'Noto Sans',
+            'sans-serif',
+            'Apple Color Emoji',
+            'Segoe UI Emoji',
+            'Segoe UI Symbol',
+            'Noto Color Emoji'
+          ]
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="w-full">
+      <div class="container-md w-[1200px] m-auto py-[20px]">
+        <header>
+          <nav class="border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+              <a href="https://flowbite.com" class="flex items-center">
+                <a href="/"
+                  aria-label="The Fly.io logo: a stylized white and purple hot air balloon on a deep purple background">
+
+                  <svg aria-labelledby="title-GAuKood_FLT45bWSdescription-GAuKood_KzX45bWi" class=""
+                    style="pointer-events: none; width: auto; height: 36px;" role="img" aria-hidden="true"
+                    viewBox="0 0 259 84" fill-rule="evenodd">
+                    <title id="title-GAuKood_clH45bWy">
+
+
+
+                    </title>
+                    <desc id="description-GAuKood_gW345bXC">
+
+
+
+                    </desc>
+
+                    <g buffered-rendering="static">
+
+                      <path
+                        d="M57.413 10.134h9.454c8.409 0 15.236 6.827 15.236 15.236v33.243c0 8.409-6.827 15.236-15.236 15.236h-.745c-4.328-.677-6.205-1.975-7.655-3.072l-12.02-9.883a1.692 1.692 0 0 0-2.128 0l-3.905 3.211-10.998-9.043a1.688 1.688 0 0 0-2.127 0L12.01 68.503c-3.075 2.501-5.109 2.039-6.428 1.894C2.175 67.601 0 63.359 0 58.613V25.37c0-8.409 6.827-15.236 15.237-15.236h9.433l-.017.038-.318.927-.099.318-.428 1.899-.059.333-.188 1.902-.025.522-.004.183.018.872.043.511.106.8.135.72.16.663.208.718.54 1.52.178.456.94 1.986.332.61 1.087 1.866.416.673 1.517 2.234.219.296 1.974 2.569.638.791 2.254 2.635.463.507 1.858 1.999.736.762 1.216 1.208-.244.204-.152.137c-.413.385-.805.794-1.172 1.224a10.42 10.42 0 0 0-.504.644 8.319 8.319 0 0 0-.651 1.064 6.234 6.234 0 0 0-.261.591 5.47 5.47 0 0 0-.353 1.606l-.007.475a5.64 5.64 0 0 0 .403 1.953 5.44 5.44 0 0 0 1.086 1.703c.338.36.723.674 1.145.932.359.22.742.401 1.14.539a6.39 6.39 0 0 0 2.692.306h.005a6.072 6.072 0 0 0 2.22-.659c.298-.158.582-.341.848-.549a5.438 5.438 0 0 0 1.71-2.274c.28-.699.417-1.446.405-2.198l-.022-.393a5.535 5.535 0 0 0-.368-1.513 6.284 6.284 0 0 0-.285-.618 8.49 8.49 0 0 0-.67-1.061 11.022 11.022 0 0 0-.354-.453 14.594 14.594 0 0 0-1.308-1.37l-.329-.28.557-.55 2.394-2.5.828-.909 1.287-1.448.837-.979 1.194-1.454.808-1.016 1.187-1.587.599-.821.85-1.271.708-1.083 1.334-2.323.763-1.524.022-.047.584-1.414a.531.531 0 0 0 .02-.056l.629-1.962.066-.286.273-1.562.053-.423.016-.259.019-.978-.005-.182-.05-.876-.062-.68-.31-1.961c-.005-.026-.01-.052-.018-.078l-.398-1.45-.137-.403-.179-.446Zm4.494 41.455a3.662 3.662 0 0 0-3.61 3.61 3.663 3.663 0 0 0 3.61 3.609 3.665 3.665 0 0 0 3.611-3.609 3.663 3.663 0 0 0-3.611-3.61Z"
+                        fill="url(#nwp_Radial1)"></path>
+
+                      <path
+                        d="M35.639 72.544l-.637.535a3.332 3.332 0 01-2.09.762H15.235a15.176 15.176 0 01-9.654-3.451c1.319.145 3.353.607 6.428-1.894l15.277-13.44a1.693 1.693 0 012.127 0l10.997 9.042 3.904-3.21c.619-.5 1.51-.5 2.128 0l12.019 9.882c1.45 1.097 3.327 2.394 7.654 3.071H58.12a3.394 3.394 0 01-1.963-.654l-.14-.108-.593-.493a1.247 1.247 0 00-.158-.159c-.672-.563-9.187-7.617-9.187-7.617a1 1 0 00-1.281.002s.021.026-9.038 7.615a1.12 1.12 0 00-.121.117zm26.262-20.96a3.678 3.678 0 00-3.61 3.609 3.68 3.68 0 003.61 3.609 3.68 3.68 0 003.61-3.609 3.678 3.678 0 00-3.61-3.609zM38.566 40.648L37.35 39.44l-.736-.762-1.858-1.999-.463-.507-2.253-2.634-.638-.791-1.974-2.569-.219-.296-1.517-2.234-.416-.673-1.087-1.866-.332-.61-.94-1.985-.178-.456-.539-1.52-.208-.718-.16-.663-.135-.72-.106-.8-.043-.511-.018-.872.004-.183.025-.522.188-1.901.059-.333.428-1.899.098-.318.318-.927.102-.24.506-1.112.351-.662.489-.806.487-.718.347-.456.4-.482.44-.484.377-.378.918-.808.671-.549c.016-.014.033-.026.05-.038l.794-.537.631-.402 1.198-.631c.018-.011.039-.02.058-.029l1.698-.705.157-.059 1.51-.442.638-.143.862-.173.572-.087.877-.109.598-.053 1.187-.063.465-.005.881.018.229.013 1.276.106 1.687.238.195.041 1.668.415.49.146.544.188.663.251.524.222.77.363.485.249.872.512.325.2 1.189.868.341.296.828.754.041.041.703.754.242.273.825 1.096.168.262.655 1.106.197.379.369.825.386.963.137.403.398 1.45a.89.89 0 01.018.078l.31 1.961.062.679.05.876.005.182-.019.978-.016.259-.053.423-.273 1.562-.066.286-.629 1.962a.626.626 0 01-.02.056l-.584 1.414-.022.047-.763 1.523-1.334 2.323-.708 1.083-.849 1.271-.599.821-1.187 1.587-.808 1.016-1.194 1.453-.837.979-1.287 1.448-.828.909-2.394 2.5-.556.55.328.28c.465.428.902.885 1.308 1.37.122.148.24.299.354.453.249.336.473.691.67 1.06.106.2.201.407.285.618.191.484.32.996.368 1.513l.022.393c.012.752-.125 1.5-.405 2.198a5.438 5.438 0 01-1.71 2.274c-.266.208-.55.391-.848.549a6.08 6.08 0 01-2.219.659h-.005a6.403 6.403 0 01-2.692-.306 5.882 5.882 0 01-1.14-.539 5.523 5.523 0 01-1.145-.932 5.458 5.458 0 01-1.086-1.703 5.662 5.662 0 01-.403-1.953l.007-.475a5.47 5.47 0 01.353-1.606c.077-.202.164-.399.261-.591.19-.37.408-.725.651-1.063.159-.221.328-.436.504-.644.367-.43.759-.839 1.172-1.224l.152-.137.244-.204z"
+                        class="fill-current"></path>
+                      <path
+                        d="M35.002 73.079l9.796-8.267a1 1 0 011.281-.002l9.938 8.269c.604.492 1.36.761 2.139.762h-25.28c.776 0 1.527-.269 2.126-.762zM41.1 43.568l.096.028c.031.015.057.036.085.055l.08.071c.198.182.39.373.575.569.13.139.257.282.379.43.155.187.3.383.432.587.057.09.11.181.16.276.043.082.082.167.116.253.06.15.105.308.119.469l-.003.302a1.726 1.726 0 01-.817 1.343 2.333 2.333 0 01-.994.327l-.373.011-.315-.028a2.398 2.398 0 01-.433-.105 2.07 2.07 0 01-.41-.192l-.246-.18a1.685 1.685 0 01-.56-.96 2.418 2.418 0 01-.029-.19l-.009-.288c.005-.078.017-.155.034-.232.043-.168.105-.331.183-.486.101-.194.216-.381.344-.559.213-.288.444-.562.691-.821.159-.168.322-.331.492-.488l.121-.109c.084-.055.085-.055.181-.083h.101zM40.481 3.42l.039-.003v33.665l-.084-.155a94.101 94.101 0 01-3.093-6.267 67.257 67.257 0 01-2.099-5.255 41.665 41.665 0 01-1.265-4.326c-.265-1.163-.469-2.343-.553-3.535a16.923 16.923 0 01-.029-1.528c.008-.444.026-.887.054-1.33.044-.696.115-1.391.217-2.081.081-.543.181-1.084.304-1.619.098-.425.212-.847.342-1.262.188-.6.413-1.186.675-1.758.096-.206.199-.411.307-.612.65-1.204 1.532-2.313 2.687-3.054a5.609 5.609 0 012.498-.88zm4.365.085l2.265.646c1.049.387 2.059.891 2.987 1.521a11.984 11.984 0 013.212 3.204c.502.748.918 1.555 1.243 2.398.471 1.247.763 2.554.866 3.882.03.348.047.697.054 1.046.008.324.006.649-.02.973-.064.725-.2 1.442-.407 2.14a17.03 17.03 0 01-.587 1.684c-.28.685-.591 1.357-.932 2.013-.754 1.457-1.623 2.852-2.553 4.201a65.451 65.451 0 01-3.683 4.806 91.02 91.02 0 01-4.417 4.896 93.66 93.66 0 002.907-5.949c.5-1.124.971-2.26 1.414-3.407.487-1.26.927-2.537 1.317-3.83.29-.969.546-1.948.757-2.938.181-.849.323-1.707.411-2.57.074-.72.101-1.444.083-2.166a30.867 30.867 0 00-.049-1.325c-.106-1.775-.376-3.545-.894-5.248a15.341 15.341 0 00-.714-1.892c-.663-1.444-1.588-2.793-2.84-3.778l-.42-.307z"
+                        fill="white"></path>
+
+                      <path
+                        d="M179.213 64.297l-10.751-23.015c-.898-1.917-1.433-2.618-2.331-3.431l-.874-.788c-.697-.676-1.155-1.302-1.155-2.045 0-1.064.843-1.96 2.378-1.96h9.334c1.465 0 2.378.762 2.378 1.9 0 .635-.292 1.111-.661 1.578-.438.555-1.008 1.096-1.008 2.082 0 .618.18 1.234.527 2.021l6.416 15.025 5.755-14.647c.354-.974.596-1.832.596-2.519 0-1.069-.581-1.505-1.029-1.983-.39-.415-.702-.854-.702-1.557 0-1.149.935-1.9 2.193-1.9h5.748c1.612 0 2.378.834 2.378 1.9 0 .682-.393 1.314-1.166 1.996l-.813.668c-1.132.925-1.656 2.263-2.251 3.647l-8.716 20.998c-1.03 2.455-2.563 5.863-4.905 8.659-2.379 2.84-5.587 5.048-9.932 5.048-3.638 0-5.84-1.737-5.84-4.24 0-2.293 1.696-4.12 3.924-4.12 1.22 0 1.855.576 2.499 1.169.532.489 1.072.991 2.137.991.988 0 1.908-.418 2.742-1.093 1.274-1.03 2.341-2.652 3.129-4.384zm63.175-.082c4.839 0 8.804-1.658 11.897-4.967 3.09-3.304 4.636-7.281 4.636-11.931 0-4.539-1.469-8.268-4.396-11.191-2.926-2.921-6.723-4.388-11.396-4.388-4.92 0-8.944 1.597-12.077 4.78-3.135 3.186-4.703 7.045-4.703 11.578 0 4.493 1.496 8.301 4.483 11.425 2.99 3.126 6.84 4.694 11.556 4.694zm-40.921-.36c2.798 0 4.788-1.884 4.788-4.6 0-2.652-2.055-4.54-4.788-4.54-2.863 0-4.912 1.891-4.912 4.54 0 2.713 2.05 4.6 4.912 4.6zm9.964-4.305l.681-.72c.81-.787 1.071-1.582 1.071-3.774V42.097c0-1.895-.258-2.741-1.062-3.465l-.801-.718c-.785-.693-1.043-1.124-1.043-1.816 0-.984.763-1.791 1.99-2.071l5.44-1.32c.52-.126 1.107-.249 1.562-.249.626 0 1.138.206 1.497.563.36.358.572.873.572 1.517v20.518c0 2.069.251 3.031 1.115 3.758a.359.359 0 01.039.039l.608.708c.764.743 1.081 1.236 1.081 1.914 0 1.209-.912 1.9-2.377 1.9h-9.211c-1.396 0-2.316-.687-2.316-1.9 0-.681.317-1.178 1.154-1.925zm-61.567.001l.681-.721c.811-.787 1.071-1.582 1.071-3.774V27.999c0-1.835-.194-2.736-1.053-3.459l-.822-.796c-.709-.689-.968-1.116-.968-1.805 0-.985.767-1.789 1.927-2.07l5.378-1.32c.521-.126 1.107-.249 1.563-.249.621 0 1.147.187 1.522.542.376.356.608.885.608 1.598v34.616c0 2.074.258 2.981 1.125 3.766l.694.734c.769.748 1.025 1.238 1.025 1.919 0 .502-.153.907-.426 1.216-.385.435-1.03.684-1.89.684h-9.21c-.86 0-1.505-.249-1.891-.684-.272-.309-.425-.714-.425-1.216 0-.682.253-1.176 1.091-1.924zm-25.079-13.934v9.319c0 1.404.278 2.701 1.435 3.768l.748.726c.838.813 1.093 1.3 1.093 2.045 0 1.138-.913 1.9-2.378 1.9h-10.385c-1.465 0-2.377-.762-2.377-1.9 0-.884.259-1.303 1.097-2.049l.745-.724c.868-.786 1.434-1.857 1.434-3.766V30.039c0-1.517-.336-2.758-1.435-3.769l-.749-.726c-.77-.747-1.092-1.238-1.092-1.985 0-1.206.915-1.96 2.377-1.96h27.817c1.063 0 1.997.237 2.594.822.415.407.68.981.71 1.778l.433 6.421c.043.803-.194 1.472-.657 1.885-.319.284-.748.454-1.288.454-.681 0-1.203-.257-1.669-.701-.419-.399-.792-.959-1.213-1.618-1.016-1.624-1.489-2.208-2.572-2.967-1.507-1.112-3.803-1.494-8.145-1.494-2.505 0-4.086.109-5.082.366-.644.166-1.016.382-1.215.699-.204.324-.226.734-.226 1.235v12.618h6.523c1.561 0 2.659-.282 3.931-2.021l.007-.01c.51-.649.879-1.127 1.23-1.444.409-.37.802-.545 1.323-.545a1.9 1.9 0 011.883 1.901v8.699c0 1.165-.908 1.96-1.883 1.96-.485 0-.879-.173-1.289-.535-.353-.31-.723-.775-1.203-1.396-1.392-1.802-2.375-2.089-3.999-2.089h-6.523zm110.214-.22c0-3.121.68-5.364 2.089-6.713 1.392-1.332 2.888-2.006 4.496-2.006 2.212 0 4.205 1.238 6.003 3.672 1.837 2.489 2.746 5.853 2.746 10.086 0 3.124-.682 5.388-2.093 6.776-1.391 1.369-2.886 2.063-4.493 2.063-2.212 0-4.204-1.248-6.002-3.701-1.838-2.51-2.746-5.904-2.746-10.177zm-18.202-16.878c2.804 0 4.788-1.578 4.788-4.3 0-2.658-1.982-4.24-4.788-4.24-2.871 0-4.851 1.583-4.851 4.24 0 2.656 1.981 4.3 4.851 4.3z"
+                        class="fill-current"></path>
+
+                    </g>
+                    <defs>
+                      <radialGradient id="nwp_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(43.593 41.714) scale(59.4764)">
+                        <stop offset="0" stop-color="#ba7bf0"></stop>
+                        <stop offset=".45" stop-color="#996bec"></stop>
+                        <stop offset="1" stop-color="#5046e4"></stop>
+                      </radialGradient>
+                    </defs>
+
+                  </svg>
+                </a>
+              </a>
+              <div class="flex items-center lg:order-2 bg-[#eeebfb] rounded-full px-1 py-1 gap-1 shadow-md">
+                <a href="#"
+                  class="text-gray-800 bg-[white] px-2 py-1 rounded-s-3xl rounded-e-xl hover:text-[#7c3aed] shadow-sd text-[14.5px]">Sign
+                  In</a>
+                <a href="#"
+                  class="text-white bg-gradient-to-r from-[#952ae2] to-[#5c38df] px-2 py-1 rounded-e-3xl rounded-s-xl text-[14.5px]">Get
+                  started</a>
+                <button data-collapse-toggle="mobile-menu-2" type="button"
+                  class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                  aria-controls="mobile-menu-2" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class=" hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 " id="mobile-menu-2">
+                <ul
+                  class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 border-2 shadow-md border-white bg-[#eaeeff] bg-white-800 py-2.5 px-3 rounded-full w-auto">
+                  <li>
+                    <a href="#"
+                      class="block text-[14.5px] ml-[20px] py-2 pr-4 pl-3 text-gray-700 hover:text-[#7c3aed] rounded bg-primary-700 lg:bg-transparent lg:hover: items-center lg:p-0 dark:text-white"
+                      aria-current="page">
+                      Articles
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block text-[14.5px] py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#6037df] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Security</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block text-[14.5px] py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#6037df] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Infra
+                      Log</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block text-[14.5px] py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#6037df] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Docs</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block text-[14.5px] py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#6037df] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Community</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block text-[14.5px] py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#6037df] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Status</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block text-[14.5px] mr-[20px] py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#6037df] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+  </header>
+
+  <svg class="z-[-1] pointer-events-none absolute left-1/2 -translate-x-1/2 top-0 w-full min-w-[80rem] h-auto"
+    width="1171" height="241" viewBox="0 0 1171 241" fill="none">
+    <g opacity=".175" filter="url(#filter0_f)">
+      <path
+        d="M731.735 -179.55C596.571 -157.762 516.36 -74.1815 552.576 7.13199C588.793 88.4455 727.724 136.701 862.887 114.913C998.051 93.1247 1078.26 9.54454 1042.05 -71.769C1005.83 -153.082 866.898 -201.337 731.735 -179.55Z"
+        fill="url(#paint0_linear)"></path>
+      <path
+        d="M378 114.106C520.489 114.106 636 45.8883 636 -38.2623C636 -122.413 520.489 -190.63 378 -190.63C235.511 -190.63 120 -122.413 120 -38.2623C120 45.8883 235.511 114.106 378 114.106Z"
+        fill="url(#paint1_linear)"></path>
+    </g>
+    <defs>
+      <filter id="filter0_f" x="0" y="-310.63" width="1170.74" height="550.775" filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur"></feGaussianBlur>
+      </filter>
+      <linearGradient id="paint0_linear" x1="567.5" y1="1.03997" x2="1029.02" y2="64.6468"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#001AFF"></stop>
+        <stop offset="1" stop-color="#6EE5C2"></stop>
+      </linearGradient>
+      <linearGradient id="paint1_linear" x1="155" y1="-11.0234" x2="511.855" y2="-162.127"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FFC83A"></stop>
+        <stop offset="0.504191" stop-color="#FF008A"></stop>
+        <stop offset="1" stop-color="#6100FF"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- hero -->
+  <section class="dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+
+      <h1
+        class="mackinac mb-4 mt-[80px] tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        A Public Cloud Built For <br class="hidden lg:block">Developers Who <em class="relative inline-block z-0">
+          Ship
+          <svg viewBox="0 0 1213 73" aria-hidden="true" preserveAspectRatio="none" height="12"
+            class="absolute -bottom-0.5 sm:bottom-0 md:bottom-[3px] left-0 w-full h-3 text-purple-400 -z-1">
+            <g buffered-rendering="static">
+              <path fill="url(#underline-gradient)"
+                d="M1213.19 35.377c2.37-13.011-22.95-10.753-31.04-14.087C1086.89 5.705 911.742 2.887 815.218 2.809c-78.003.231-155.966-1.833-233.961.481-57.545.429-114.885 6.164-172.419 7.383-121.164 5.39-242.94 10.751-362.507 32.199-12.356 3.286-25.614 4.255-37.332 9.401-29.507 22.983 27.103 20.15 39.468 17.234 357.956-47.703 362.767-46.261 636.452-50.97 121.033-2.508 241.892 6.658 428.341 19.243 4.74.404 8.98-4.032 8-8.788a942.105 942.105 0 0154.69 6.378c9.44 1.843 18.92 3.583 28.29 5.729 4.01.839 8.02-1.718 8.95-5.712v-.01z">
+              </path>
+            </g>
+            <defs>
+              <linearGradient id="underline-gradient" gradientTransform="rotate(110)">
+                <stop offset="5%" stop-color="#CA7FF8"></stop>
+                <stop offset="95%" stop-color="#795BE9"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </em></h1>
+
+      <p class="mb-8 text-lg font-normal text-gray-500 lg:text-[19px] sm:px-16 xl:px-48 dark:text-gray-400"><b
+          class="text-[#281950]">Over 3 million apps</b> have launched on Fly.io, leveraging global Anycast
+        load-balancing, zero-config private networking, hardware isolation, and instant WireGuard VPN connections, with
+        push-button deployments scaling to thousands of instances.</p>
+      <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <a href="#"
+          class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-full bg-gradient-to-r from-[#952ae2] to-[#5c38df] hover:bg-gradient-to-r from-[#831cdd] to-[#432de5] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+          Deploy Your App in 5 minutes
+          <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-3 -->
+
+  <div class="w-full">
+    <div class="container-md relative h-[340px]">
+      <div class="absolute top-[-120px]">
+        <img src="https://fly.io/phx/ui/images/cloud-city-a61199fec62cd744415fcdf4e1be8434.png?vsn=d" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="w-full relative overflow-hidden	">
+    <div
+      class="rotate-3 absolute -inset-x-12 -top-6 h-12 bg-gradient-to-r from-sky-300 via-indigo-300 to-pink-300 blur-3xl">
+    </div>
+    <div class="container-md w-[1200px] m-auto ">
+      <section class="bg-white dark:bg-gray-900 ">
+        <div
+          class="gap-8 py-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:pt-[150px]  pb-[50px] lg:px-6">
+          <img class="w-full hidden dark:block"
+            src="https://fly.io/phx/ui/images/fly-globe-cb332f77ddb429aa3ef4e0a2c6c592ba.png?vsn=d"
+            alt="dashboard image">
+          <div class="mt-4 md:mt-0">
+            <h2 class="mb-4 text-4xl tracking-tight text-[#281950] hero-txt"> Public Cloud Infrastructure. Modern
+              Platform Endorphins.</h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400 mb-4">The most flexible and powerful
+              compute platform on any public cloud. Fly Machines are hardware-virtualized containers, running on our own
+              hardware, that launch instantly and run exactly as long as you want them to — for a single HTTP request,
+              or for weeks of uptime.
+
+            </p>
+            <hr>
+          </div>
+          <div class="w-88">
+            <img class="w-full dark:hidden items-center"
+              src="https://fly.io/phx/ui/images/fly-globe-cb332f77ddb429aa3ef4e0a2c6c592ba.png?vsn=d"
+              alt="dashboard image">
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-2 flex gap-8">
+          <div class="">
+            <div class="w-full flex justify-between">
+              <div
+                class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-emerald-500/30 from-green-300/50 to-emerald-300/50 text-emerald-500 ring-emerald-500/35">
+
+                <svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; " viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <g buffered-rendering="static">
+
+                    <path
+                      d="M12.572 18.624a9.035 9.035 0 005.735-5.139h-3.92c-.32 2.065-.93 3.912-1.815 5.139zm6.119-10.947h-4.163c.076.762.12 1.543.12 2.323s-.044 1.561-.12 2.323h4.16c.205-.757.31-1.538.312-2.323 0-.806-.113-1.579-.309-2.323zm-.388-1.162a9.025 9.025 0 00-5.735-5.139c.886 1.227 1.496 3.074 1.815 5.139h3.92z"
+                      fill-opacity=".7" fill-rule="nonzero"></path>
+                    <path
+                      d="M6.789 13.485c.527 3.241 1.768 5.517 3.213 5.517 1.444 0 2.686-2.276 3.212-5.517H6.789zM6.517 10c0 .806.044 1.579.12 2.323h6.726c.076-.744.12-1.517.12-2.323s-.044-1.579-.12-2.323H6.637c-.076.744-.12 1.517-.12 2.323zm6.697-3.485C12.688 3.274 11.446.998 10.002.998c-1.445 0-2.686 2.276-3.213 5.517h6.425z"
+                      fill-opacity=".5" fill-rule="nonzero"></path>
+                    <path
+                      d="M1.701 13.485a9.022 9.022 0 005.735 5.139c-.886-1.227-1.496-3.074-1.815-5.139h-3.92zM5.356 10c0-.78.043-1.561.119-2.323H1.312A9.067 9.067 0 001 10c0 .806.116 1.579.312 2.323h4.16L5.356 10zm2.076-8.624a9.016 9.016 0 00-5.731 5.139h3.92c.315-2.065.925-3.912 1.811-5.139z"
+                      fill-opacity=".3" fill-rule="nonzero"></path>
+                    <path
+                      d="M6.789 13.485c.527 3.241 1.768 5.517 3.213 5.517 1.444 0 2.686-2.276 3.212-5.517H6.789zm5.783 5.139a9.035 9.035 0 005.735-5.139h-3.92c-.32 2.065-.93 3.912-1.815 5.139zM1.701 13.485a9.022 9.022 0 005.735 5.139c-.886-1.227-1.496-3.074-1.815-5.139h-3.92zm5.686.5h5.23c-.312 1.586-.802 2.889-1.413 3.71-.367.492-.76.807-1.202.807-.442 0-.835-.315-1.202-.807-.612-.821-1.102-2.124-1.413-3.71zm6.326 3.66c.488-1.041.857-2.297 1.098-3.66h2.704a8.536 8.536 0 01-3.803 3.661l.001-.001zm-11.221-3.66h2.705c.24 1.363.609 2.62 1.098 3.66a8.518 8.518 0 01-3.803-3.66zm16.199-6.308h-4.163c.076.762.12 1.543.12 2.323s-.044 1.561-.12 2.323h4.16c.205-.757.31-1.538.312-2.323 0-.806-.113-1.579-.309-2.323zM5.356 10c0-.78.043-1.561.119-2.323H1.312A9.067 9.067 0 001 10c0 .806.116 1.579.312 2.323h4.16L5.356 10zm1.161 0c0 .806.044 1.579.12 2.323h6.726c.076-.744.12-1.517.12-2.323s-.044-1.579-.12-2.323H6.637c-.076.744-.12 1.517-.12 2.323zm-1.661 0l.09 1.823H1.705a8.408 8.408 0 01-.205-1.822 8.605 8.605 0 01.204-1.824h3.225A23.475 23.475 0 004.856 10zm2.161 0c0-.627.027-1.234.076-1.823h5.814a21.961 21.961 0 010 3.646H7.093A21.961 21.961 0 017.017 10zm11.281-1.823a8.47 8.47 0 01.202 1.822 8.469 8.469 0 01-.203 1.824h-3.223a22.99 22.99 0 00.001-3.646h3.223zM7.432 1.376a9.016 9.016 0 00-5.731 5.139h3.92c.315-2.065.925-3.912 1.811-5.139zm5.782 5.139C12.688 3.274 11.446.998 10.002.998c-1.445 0-2.686 2.276-3.213 5.517h6.425zm5.089 0a9.025 9.025 0 00-5.735-5.139c.886 1.227 1.496 3.074 1.815 5.139h3.92zm-.791-.5h-2.705c-.24-1.363-.609-2.619-1.098-3.66a8.518 8.518 0 013.803 3.66zM6.291 2.355c-.488 1.041-.857 2.297-1.095 3.66H2.492a8.514 8.514 0 013.8-3.661l-.001.001zm6.326 3.66h-5.23c.311-1.586.801-2.889 1.413-3.71.367-.492.76-.807 1.202-.807.442 0 .835.315 1.202.807.611.821 1.101 2.124 1.413 3.71z">
+                    </path>
+
+                  </g>
+                </svg>
+              </div>
+              <div class="w-[100%] pl-[50px] text-[22px] feature">Get Right in Your Users’ Faces
+                <p class="pt-4 text-[17px] text-[#5c517c]">
+                  Deploy in 35 regions, from Sydney to São Paulo, for sub-100ms response times and native-app feel no
+                  matter where your users are.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <div class="">
+              <div class="w-full flex justify-between">
+                <div
+                  class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-blue-500/30 from-sky-300/50 to-blue-300/50 text-blue-500 ring-blue-500/30">
+
+                  <svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; " viewBox="0 0 20 20"
+                    fill="currentColor" fill-rule="evenodd">
+                    <g buffered-rendering="static">
+
+                      <path
+                        d="M10.004 14.458a2.273 2.273 0 012.271 2.271 2.273 2.273 0 01-4.543 0 2.273 2.273 0 012.272-2.271zM5.023 1a2.273 2.273 0 012.271 2.271A2.272 2.272 0 115.023 1zm9.954 0a2.272 2.272 0 010 4.542 2.273 2.273 0 01-2.271-2.271A2.273 2.273 0 0114.977 1z"
+                        fill-opacity=".7"></path>
+                      <path
+                        d="M6.138 5.249v2.61c0 .601.494 1.094 1.094 1.094h5.545a1.1 1.1 0 001.094-1.094V5.254a2.25 2.25 0 001.106.288 2.26 2.26 0 001.062-.263v2.58a3.28 3.28 0 01-3.262 3.263h-1.689v3.612a2.263 2.263 0 00-2.168-.001v-3.611H7.232a3.28 3.28 0 01-3.263-3.263V5.283a2.267 2.267 0 002.169-.034z"
+                        fill-opacity=".3" fill-rule="nonzero"></path>
+                      <path
+                        d="M13.871 5.254A2.27 2.27 0 0114.977 1a2.272 2.272 0 011.062 4.279v2.58a3.28 3.28 0 01-3.262 3.263h-1.689v3.612A2.27 2.27 0 0110.004 19a2.273 2.273 0 01-2.272-2.271c0-.861.481-1.611 1.188-1.996v-3.611H7.232a3.28 3.28 0 01-3.263-3.263V5.283A2.273 2.273 0 015.023 1a2.27 2.27 0 011.115 4.249v2.61c0 .601.494 1.094 1.094 1.094h5.545a1.1 1.1 0 001.094-1.094V5.254zm.5 2.606V4.961l-.256-.143a1.772 1.772 0 01.862-3.318 1.772 1.772 0 01.828 3.337l-.266.141v2.881a2.778 2.778 0 01-2.762 2.763h-2.189v4.409l.261.142a1.772 1.772 0 11-1.69-.001l.261-.142v-4.408H7.232a2.777 2.777 0 01-2.763-2.763V4.981l-.267-.14A1.773 1.773 0 015.023 1.5a1.772 1.772 0 01.869 3.314l-.254.144v2.901c0 .875.72 1.594 1.594 1.594h5.545c.874 0 1.593-.719 1.594-1.593z">
+                      </path>
+
+                    </g>
+                  </svg>
+                </div>
+                <div class="w-[100%] pl-[50px] text-[22px] feature">Get Right in Your Users’ Faces
+                  <p class="pt-4 text-[17px] text-[#5c517c]">
+                    Deploy in 35 regions, from Sydney to São Paulo, for sub-100ms response times and native-app feel no
+                    matter where your users are.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 flex gap-8 mt-[60px] mb-[100px]">
+          <div class="">
+            <div class="w-full flex justify-between">
+              <div
+                class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-orange-500/30 from-orange-200/50 to-orange-500/40 text-orange-500 ring-orange-500/35">
+
+                <svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; " viewBox="0 0 20 20"
+                  fill="currentColor" fill-rule="evenodd">
+                  <g buffered-rendering="static">
+
+                    <path
+                      d="M15.534 6.708h-4.945l1.569-4.188c.047-.126.071-.259.071-.393 0-.617-.508-1.126-1.125-1.127H5.429c-.568 0-1.047.423-1.116.987L3.35 9.8l-.001.003v.005l-.001.002v.007l-.001.002v.008l-.001.002v.009l-.001.007v.004l-.001.003v.006l-.001.018v.006l-.001.008v.005l-.001.019v.048l.001.002v.028l.001.002v.011l.001.017.001.002v.008c.01.117.038.232.085.342l.001.005.008.018.002.002.001.003v.002l.001.002.002.002.003.007.003.008.005.01.027.051.002.004.003.005.009.016.001.001v.001l.002.002.002.003.001.002v.001l.001.001.003.005.001.001.001.003.003.003v.001l.001.001.002.003v.002l.001.001.002.003.001.002.001.001c.061.095.136.18.221.251l.004.003.007.007.007.006.004.002.001.002h.001l.002.001.005.005.002.001.002.002.006.004a.018.018 0 00.007.005v.001l.002.001.003.002.002.002h.001l.003.003.005.003.014.011.005.003.004.003.023.015.008.006.016.009.005.003.011.007.016.009.001.001h.001l.006.004.001.001h.001l.001.001.006.003a.02.02 0 00.008.004l.002.002.004.001.001.001.004.002.001.001.003.001.008.004.003.002.008.004.003.002h.002l.001.001.003.001.002.001.001.001c.125.06.262.098.404.108h.002l.004.001h.01l.009.001h.017l.003.001h4.996l-1.597 6.546a1.128 1.128 0 001.088 1.4c.381 0 .737-.194.944-.514l6.615-10.042c.121-.184.185-.398.185-.618 0-.617-.507-1.125-1.124-1.126z"
+                      fill-opacity=".5" fill-rule="nonzero"></path>
+                    <path
+                      d="M3.518 10.543l-.002-.003-.001-.003-.006-.008-.001-.003-.006-.01-.002-.003-.002-.002-.053-.103-.003-.004v-.002l-.001-.003-.002-.002-.008-.018-.001-.005a1.108 1.108 0 01-.085-.342v-.008l-.001-.002-.001-.028-.001-.002v-.028l-.001-.002.003-.11.001-.003v-.004l.001-.007v-.009l.001-.002v-.008l.001-.002V9.81l.001-.002v-.005L3.35 9.8l.963-7.813A1.124 1.124 0 015.429 1h5.675c.617.001 1.125.51 1.125 1.127 0 .134-.024.267-.071.393l-1.569 4.188h4.945l.057.002c.205.016.399.076.57.192.502.342.646 1.042.312 1.55L9.858 18.494a1.13 1.13 0 01-1.614.29 1.14 1.14 0 01-.44-.729c-.023-.149-.014-.3.022-.447l1.597-6.546H4.927a.499.499 0 00-.344-.475h-.001l-.016-.005.017.005c.039.014.048.084.04.181a.805.805 0 01-.036.294l-1.069-.519zm.923.019l-.026-.002a.607.607 0 01-.214-.057l-.002-.001-.087-.049-.056-.044a.612.612 0 01-.115-.133l-.036-.063-.015-.035a.608.608 0 01-.045-.176l-.004-.101.001-.011v-.001l.004-.028.963-7.813a.625.625 0 01.62-.548h5.674a.63.63 0 01.586.846l-1.568 4.187a.5.5 0 00.468.675h4.944a.63.63 0 01.522.97L9.438 18.223a.623.623 0 01-1.127-.491l1.598-6.551a.502.502 0 00-.486-.619H4.441zm.012.001l.004.001h.016l-.026-.002.006.001zm-.182-.017a.5.5 0 00-.067-.041l.067.041zm-.426-.52a.548.548 0 01-.004.07l-.013-.014.003-.014a.121.121 0 00.014-.042z">
+                    </path>
+
+                  </g>
+                </svg>
+              </div>
+              <div class="w-[100%] pl-[50px] text-[22px] feature">Get Right in Your Users’ Faces
+                <p class="pt-4 text-[17px] text-[#5c517c]">
+                  Deploy in 35 regions, from Sydney to São Paulo, for sub-100ms response times and native-app feel no
+                  matter where your users are.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <div class="">
+              <div class="w-full flex justify-between">
+                <div
+                  class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-amber-500/30 from-yellow-200/75 to-orange-200/75 text-amber-500 ring-amber-400/60">
+                  <svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; ;"
+                    viewBox="0 0 20 20" fill="currentColor" fill-rule="evenodd">
+                    <g buffered-rendering="static">
+
+
+                      <path
+                        d="M7.812 6.867l-.83-1.811a1.9 1.9 0 001.728-.792l.829 1.81a4.317 4.317 0 013.721.975l2.453-1.786A1.903 1.903 0 0016.832 6.8L14.38 8.585c.414.96.464 2.039.141 3.034l2.154 1.283a1.902 1.902 0 00-.972 1.633l-2.156-1.283a4.297 4.297 0 01-3.122 1.341c-.52 0-1.019-.092-1.481-.261l-1.058 1.637a1.9 1.9 0 00-1.597-1.031l1.059-1.64a4.3 4.3 0 01-1.123-2.06v.001H4.042a1.894 1.894 0 000-1.901h2.183a4.306 4.306 0 011.587-2.471zm2.613.972a2.461 2.461 0 00-2.38 2.449 2.461 2.461 0 002.38 2.449 2.45 2.45 0 002.449-2.449 2.45 2.45 0 00-2.449-2.449z"
+                        fill-opacity=".3" fill-rule="nonzero"></path>
+                      <path
+                        d="M6.196 14.935l.061-.001c1.041 0 1.899.857 1.899 1.899a1.908 1.908 0 01-1.899 1.899l-.063-.001a1.907 1.907 0 01-1.836-1.898c0-1.019.82-1.865 1.838-1.898zm11.405-2.275a1.908 1.908 0 011.838 1.899 1.908 1.908 0 01-1.838 1.899 1.908 1.908 0 01-1.838-1.899c0-1.019.819-1.866 1.838-1.899zM2.399 8.39a1.909 1.909 0 011.898 1.899 1.908 1.908 0 01-1.899 1.899h-.001a1.909 1.909 0 01-1.898-1.899c0-1.042.858-1.899 1.9-1.899H2.4h-.001zm15.202-5.224A1.91 1.91 0 0119.5 5.065v.001a1.91 1.91 0 01-1.9 1.9 1.91 1.91 0 01-1.9-1.9c0-1.042.858-1.9 1.9-1.9h.001zM7.161 1.268c1.041 0 1.899.857 1.899 1.898a1.908 1.908 0 01-1.899 1.899 1.907 1.907 0 01-1.898-1.898c0-1.042.857-1.899 1.898-1.899z"
+                        fill-opacity=".7" fill-rule="nonzero"></path>
+                      <path
+                        d="M2.894 8.457c.486.133.896.455 1.145.881h2.186a4.306 4.306 0 011.587-2.471l-.83-1.811a1.907 1.907 0 01-1.719-1.889c0-1.042.857-1.899 1.898-1.899s1.899.857 1.899 1.898c0 .524-.22.946-.34 1.121l.819 1.787a4.317 4.317 0 013.721.975l2.451-1.784A1.91 1.91 0 0117.6 3.166h.001A1.91 1.91 0 0119.5 5.065v.001a1.91 1.91 0 01-1.9 1.9c-.273 0-.534-.059-.77-.165l-2.45 1.784c.414.96.464 2.039.141 3.034l2.154 1.283a1.902 1.902 0 00-.972 1.633l-2.156-1.283a4.297 4.297 0 01-3.122 1.341c-.52 0-1.019-.092-1.481-.261l-1.026 1.587c.151.272.238.584.238.914a1.908 1.908 0 01-1.899 1.899l-.063-.001a1.907 1.907 0 01-1.836-1.898 1.91 1.91 0 011.345-1.816.5.5 0 00.493.418v-.01a.5.5 0 01-.401-.433 1.83 1.83 0 01.401-.057l.095-.001 1.057-1.636a4.292 4.292 0 01-.984-1.58.5.5 0 00.361-.48c0 .082-.238.289-.386.41l-.016-.051-.007-.023c.136-.237.38-.622.407-.384a.617.617 0 00-.01-.062c.155.687.499 1.317.992 1.82.164.167.19.425.063.621l-1.057 1.637a.5.5 0 01-.42.228l-.093.001a1.406 1.406 0 00-1.34 1.398 1.404 1.404 0 001.399 1.399c.767 0 1.399-.631 1.399-1.399 0-.243-.064-.472-.175-.671a.502.502 0 01.017-.514l1.026-1.587a.5.5 0 01.592-.199c.408.15.849.231 1.309.231h.001a3.797 3.797 0 002.758-1.185.5.5 0 01.619-.086l1.544.919c.104-.284.26-.547.461-.774l-1.543-.918a.501.501 0 01-.22-.585 3.801 3.801 0 00-.124-2.681.499.499 0 01.165-.602l2.45-1.784a.5.5 0 01.499-.052c.173.078.364.121.565.121.768 0 1.4-.632 1.4-1.4v-.001c0-.767-.632-1.399-1.399-1.399H17.6a1.407 1.407 0 00-1.392 1.546.5.5 0 01-.203.457l-2.451 1.784a.5.5 0 01-.623-.027 3.818 3.818 0 00-3.29-.863.5.5 0 01-.557-.281l-.818-1.787a.5.5 0 01.042-.49 1.57 1.57 0 00.252-.839c0-.767-.632-1.398-1.399-1.398s-1.398.631-1.398 1.399c0 .722.56 1.324 1.267 1.392a.502.502 0 01.407.289l.83 1.811a.5.5 0 01-.152.605 3.814 3.814 0 00-1.402 2.185.502.502 0 01-.488.389H4.039a.5.5 0 01-.432-.248 1.404 1.404 0 00-1.208-.7c-.768 0-1.4.632-1.4 1.399s.631 1.398 1.398 1.399h.001c.514 0 .966-.284 1.21-.701a.498.498 0 01.431-.248h2.186v.5h-.456c-.027-.019-.044-.023-.044-.001v.001H4.039c-.33.566-.944.949-1.641.949h-.001a1.909 1.909 0 01-1.898-1.899c0-1.042.858-1.899 1.9-1.899.171 0 .337.023.495.067a.5.5 0 000 0zm14.707 4.203a1.908 1.908 0 011.838 1.899 1.908 1.908 0 01-1.838 1.899 1.908 1.908 0 01-1.838-1.899c0-1.019.819-1.866 1.838-1.899zm0 .5a1.407 1.407 0 011.338 1.399c0 .742-.589 1.36-1.327 1.398a1.407 1.407 0 01-1.349-1.398c0-.742.589-1.36 1.327-1.398l.011-.001zm-7.176-5.821h-.014a2.964 2.964 0 00-2.866 2.949 2.964 2.964 0 002.866 2.949h.014a2.95 2.95 0 002.949-2.949 2.95 2.95 0 00-2.949-2.949zm0 .5a2.461 2.461 0 00-2.38 2.449 2.461 2.461 0 002.38 2.449 2.45 2.45 0 002.449-2.449 2.45 2.45 0 00-2.449-2.449z">
+                      </path>
+
+                    </g>
+                  </svg>
+                </div>
+                <div class="w-[100%] pl-[50px] text-[22px] feature">Get Right in Your Users’ Faces
+                  <p class="pt-4 text-[17px] text-[#5c517c]">
+                    Deploy in 35 regions, from Sydney to São Paulo, for sub-100ms response times and native-app feel no
+                    matter where your users are.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="w-full">
+    <div class="container w-[1200px] m-auto">
+      <section class="bg-white px-4 py-8 antialiased dark:bg-gray-900 md:py-16">
+        <div
+          class="mx-auto bg-gradient-to-r from-[#fffbeb] to-[#fbd1e8] shadow-md
+
+        grid max-w-screen-xl rounded-lg bg-gray-50 p-4 dark:bg-gray-800 md:p-8 lg:grid-cols-12 lg:gap-8 lg:p-16 xl:gap-16">
+          <div class="me-auto place-self-center lg:col-span-7">
+            <h1 class="mb-3 text-2xl font-bold leading-tight tracking-tight dark:text-white md:text-4xl text-[#281950]">
+              Save $500 today on your purchase <br />
+              of a new iMac computer.
+            </h1>
+            <p class="mb-6 text-gray-500 dark:text-gray-400">Paid support packages include a team of actual engineers
+              (not chatbots) who themselves ship code on our platform. Emergency support and guaranteed response times
+              available.
+
+            </p>
+            <a href="#"
+              class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#952ae2] to-[#5c38df] px-5 py-3 text-center text-base font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              Learn More </a>
+          </div>
+          <div class="lg:col-span-5 lg:mt-0 ">
+            <a href="#">
+              <img class="mb-4 h-56 w-56 dark:hidden sm:h-96 sm:w-96 md:h-full md:w-full"
+                src="https://fly.io/phx/ui/images/cool-bird-d997174954ab5a152ccac3d2dcb19c8d.png?vsn=d"
+                alt="peripherals" />
+              <img class="mb-4 hidden dark:block md:h-full"
+                src="https://fly.io/phx/ui/images/cool-bird-d997174954ab5a152ccac3d2dcb19c8d.png?vsn=d"
+                alt="peripherals" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="w-full">
+    <div class="container w-[1200px] m-auto">
+      <div class="flex grid grid-cols-2 gap-16 mb-[100px]">
+        <div>
+          <ul class="relative text-lg text-navy font-[450] py-10">
+            <svg aria-hidden="true" viewBox="0 0 11 1300" width="3" preserveAspectRatio="none"
+              class="hidden xs:flex absolute h-full left-8 sm:left-14 top-0 w-[3px] fill-pink-600/20">
+              <g buffered-rendering="static">
+                <path
+                  d="M4.85 35.708c-.029 1.04-1.783 17.58-1.35 26.79.018.37-.122 11.97-.146 12.33-.048.7-.174 1.76-.13 2.06 1.458 9.7-.138 20.01.212 29.8.348 9.71.035 19.24-.08 28.79-.06 4.81.034 9 .402 13.18.029.34.141.71.128.86-.803 10.56.909 22.39-.561 32.63-.278 1.93-.178 4.38-.143 6.66.346.51.73 1.18.558 3.66-.146 2.1-.456 3.84-.648 5.88-.244 2.58-.718 6.03.087 7.52.683 1.25.299-4.71 1.013-5.18-.171 2.88-.238 6.11-.535 8.47-.406 3.21-.487 5.99-.22 9.57.123 1.65.18 4.45.01 5.58-1.166 7.74-.01 15.7-.135 23.5-.107 6.53.723 3.97 1.428 3.05-.191 1.41-.286 2.41-.428 3.09-.47 2.27-1.764 2.53-.661 8.48-.645 4.25-.795 9.56-1 14.69-.243 6.03-.045 6.8 1.369 6 .042-.22.087-.64.123-.62.104.07.203.31.305.49l.085.72-.116-.49c-.131-.13-.263-.16-.396-.1-.349 3.27-.766 6.17-1.221 9.09-1.064 6.85-.719 12.261.836 15.806-1.469 9.731-1.469 9.731.517 17.434-.687 4.97-1.73 9.437-1.557 16.304.102 4.087-.071 7.494-.133 11.182-.112 6.645-.139 13.223-.478 19.763-.13 2.518.404 3.623.771 4.689l.111-.589-.101.635c.61 6.199-1.021 10.777-.409 16.977-1.128 9.018-.299 14.884 1.371 20.2-1.341 3.734-1.92 9.221-1.453 15.964.392 5.702-.804 12.726.596 17.467.445 1.504.175 4.296-.166 5.807-1.164 5.16-.121 6.5.471 8.665.112 4.512-1.363 3.643-1.019 8.56.326 4.676 1.162 6.18 1.96 7.612.066.118.136.177.202.269.47.66 1.103 1.092.68 4.898-.274 2.452-.777 3.243-1.202.405-.221-1.471-.438-3.387-.819-2.047-.326 1.151-.349 3.708-.169 5.154.367 2.968.348 5.002-.1 7.755-.574 3.532-.494 8.535-.693 12.884-.11 2.393.338 2.838.68 3.237.181 1.092.363 1.085.546.006.231 1.55.197 2.642-.156 3.499-.976 2.367-1.891 4.166-1.196 12.366.298 3.512-.184 9.031-.331 13.622-.021.654-.236 1.459-.206 1.772.776 8.58-.089 17.121.001 25.655.019 1.805.247 2.544.571 2.355.135-.242.194-1.969.409-.628l-.37.902c-.233 1.923-.487 3.885-.332 6.331.318 5.022.205 9.456-.307 14.145-.367 3.374-.677 7.71.233 10.823.25.857.068 1.831-.045 2.831-.533 4.781.019 5.54.647 4.192.637-1.36 1.236 1.047 1.883-1.373-.068 1.615-.056 2.505-.129 2.832-.675 3.073-2.203.163-2.147 7.795.037 5.134-.871 9.652-.208 15.015.204 1.648-.149 3.544-.253 5.317-.536 9.227-.525 9.371 1.022 15.943-1.033 6.605-1.331 14.06-.846 22.379.113 1.929-.123 2.701-.345 3.59-.046-.177-.099-.523-.138-.484-.121.111-.116.582.006 1.19.436 3.904 1.227 7.063.348 12.622-.518 3.263-.144 8.56-.48 12.942-.231 3.021.233 6.48 1.053 6.284.459-1.739.93-2.688 1.541-.732-.567.359-1.04.654-1.513.948-.587 3.649-.846 8.403-1.28 12.517-.655 6.212-.489 13.465.426 19.455l.082.706-.106-.595c-.356 1.511-.659 4.002-.427 5.834.839 6.624.036 12.713-.076 19.01-.408 1.766-.351 3.545-.005 5.336.004 2.839.008 5.677.01 8.515-.144 1.288-.104 1.589.14.778.125.288.361.785.357.844-.489 8.102-.884 16.185-.063 24.386-.759 3.597-.452 6.232.245 8.626.076.255.146 1.131.125 1.595-.824 17.991-.888 26.885-.27 39.12.053 1.073.193 2.871.127 3.159-.703 2.969-.506 5.369-.249 9.659.176 2.956-.287 7.534.314 11.17.193 1.177.018 2.949-.14 4.244-.923 7.553-.827 15.237-.311 23.582.189 3.06.21 7.37-.148 10.862-.043-.196-.093-.582-.129-.549-.119.111-.11.549.023 1.118-.072 4.977.559 10.705-.528 14.642-.076.275-.078 2.021-.065 2.04 1.359 1.982.075 8.548.757 12.772.592 3.663-.454 10.457-.212 15.336.346 6.971-.346 14.557.523 20.985.063.471.044 1.589-.014 2.165-.799 7.73.133 16.95-.729 24.73-.196 1.76-.217 4.56-.142 6.7.427 12.29.084 24.78.408 37.18.177 6.75-.027 14.31-.173 21.21-.13 6.17.044 11.99.02 17.95-.049 12.03.104 24.06-.082 36.11-.085 5.59.04 11.44.167 16.89.411 17.6.551 35.27.592 52.92.035 14.46.592 28.43.868 42.61.292 15.04 1.382 28.55 1.94 42.96.085 2.22.185 4.55.389 6.48.514 4.88 1.471 4.73 1.929-.29.184-2 .371-4.42.335-6.54-.27-15.63.168-31.13.283-46.68.169-22.78-.419-45.36-.504-68.05-.114-29.75-.708-59.34-.504-89.28.129-18.9-.092-38.15-.019-57.19.057-15.13-.175-30.353.322-45.453.361-10.921-.337-21.816-.17-32.861.532-35.484.004-71.073.294-106.596.222-27.159-.062-54.318-.05-81.477.007-17.435.382-34.876.345-52.304-.031-15.257-.035-30.566.02-45.771.094-25.936-.333-51.976.336-77.847.098-3.773.101-7.638.102-11.464.016-32.031-.19-64.121.085-96.086.309-36.184.154-72.374.415-108.499.136-19.004.053-38.139.416-56.986.404-21.008.031-42.128.456-62.908.483-23.6.509-47.32.622-70.85.2-41.9.739-83.75.698-125.69-.005-6.32.272-12.82.271-19.34-.001-6.14-.066-11.83-.712-17.48-.809-7.09-1.993-22.11-1.993-14.86.001 13.62-2.073 20.21-2.445 33.78z">
+                </path>
+              </g>
+            </svg>
+
+            <li class="flex relative items-center py-3 pl-4 xs:pl-12 sm:pl-20 pr-7">
+              <svg aria-hidden="true" viewBox="0 0 42 43" width="14"
+                class="w-3.5 h-auto shrink-0 fill-emerald-500 mr-3 mb-0.5">
+                <g buffered-rendering="static">
+                  <path
+                    d="M8.581 29.619l.23-.013-.122-.109-.109.122-.251-.334c.173.021.303-.076.382-.23-.204-.011-.359-.15-.481-.32l.449-.257-.496-.158.123-.285c-.185.119-.352-.103-.271-.286l.238.103c.112-.165-.12-.56-.208-.823-.463.198-.243-.375-.033-.578-.1-.069-.208-.037-.299.04.075-.26-.185-.381-.42-.463l.218-.244c.088.063.038.147-.034.21l.38.164c-.151-.373-.3-.725-.718-.817.376-.335.029-.572.227-.917a62.19 62.19 0 01-.38-.164l.081.204-.258-.055-.055.258c-.325-.101-.129-.537.185-.427-.013-.357-.331-.327-.395-.002l-.169-.129c.207-.111.373-.268.436-.488-.114-.017-.079-.152-.06-.252l-.442-.022c.078-.311-.073-.525-.399-.51a.352.352 0 00-.059-.646l.039.299c-.252-.107-.272-.485-.583-.477.136-.166.307-.365.178-.543-.155.094-.363.208-.28.386l-.406-.232c.671-.056.284-.37.145-.727-.201.263-.756-.165-.292-.238-.106-.134-.273-.148-.252.06-.304-.244-.81-.522-.561-.919-.239-.086-.535-.567-1.324-.7-.88-.149-2.255.059-2.42.172.169.305-.471.988.317.7-.996.784.074 2.219-.146 3.207l.19.082c-.125.514.345 1.373.64 1.912.136-.215.421-.218.422.069-.568-.247-.161.677.08.204.453.755-1.328-.077.56 1.313a1.944 1.944 0 01-.041.095 24.27 24.27 0 01-.237-.103c-.041.216-.24.27-.449.257l.351.885c.07-.135.196-.185.34-.135l.062-.537.19.082c-.086.312-.118.594-.159.89-.079-.118-.181-.289-.312-.191.233.263-.127.835.355.942.389.089.179.233-.042.292.621.909.612 2.247 1.366 3.099l-.197.197c.131.23.174.552.549.687l-.171.265c.357.527.43 1.989 1.537 1.792-.267.193-.557.179-.747-.098l-.008.279.184-.034c-.043.131.05.211.176.246l-.382.229c.192.298.758.424.467.878.154.033.218.159.203.313l.299-.039-.103.237.142.062c-.078.097-.158.194-.238.291l.163.014-.006-.115.054.136c.134-.099.296.08.427.184-.428.064-.521.891-.002.789l-.035.21.394.001-.013.164c-.135-.107-.261.064-.361.182.252.005.354.281.611.151-.176.221.148.388-.084.584.456-.116.179.302-.024.384.139.315.751-.133.538.514l.231-.012c.007.301-.333 1.928.228 1.169.225.233 1.136-.034.658.566.572.51 1.774-1.112 1.596-.043a.718.718 0 01.681-.27l-.047-.414c.748-.048 1.673-1.196 2.03-1.829l.123.109c-.001-.214.169-.317.374-.345l-.114-.388c.545-.166 1.311-.976 1.465-1.565l.258.055-.06-.252c.474-.429 1.877-1.732 1.841-2.305.529.162.813-1.193 1.326-1.372.469-.092-.187-.564.233-.604.996-.632 1.623-1.719 2.263-2.63.184-.237.751-.053.366-.518.418-.065.695-.695.845-1.044.375-.056.614-.991 1.009-1.03-.057-.337.54-.41.301-.828.155.012.288-.046.361-.183l.122.109c.03-.111-.014-.2-.129-.224.073-.148.197-.242.341-.135.04-.139.065-.296-.067-.367.261-.056.58-.33.361-.577.406.246.554-.257.362-.576.113-.036.141.077.149.177.249-.18.603-.646.642-.963.49.291.229-.141.443-.372-.112-.048-.27-.096-.245-.219.217-.006.268.228.496.158-.102-.15-.022-.296.117-.401l-.231.013c.046-.206.234-.215.367-.066.157-.241.293-.845.661-.617.088-.127.05-.251-.088-.32.401.028.434-.672.798-.67l-.135-.34c.25.017.521-.342.694-.433-.213-.015-.352-.138-.298-.354 1.133-.034 1.429-1.506 2.242-2.188l.101.156c.042-.094.083-.19.124-.285l-.184.034c-.097-.448.963-.598.594-.984l.279.008c-.237-.489 1.11-.574.342-.923.633.045 1.024-.691 1.227-1.274l.17.13c.257-.4.623-.596.676-1.174l.19.082c.254-.467.715-.957 1.036-1.356a45.172 45.172 0 01-.128-.225c.173-.129.368-.149.489.043.151-.325.314-.691.363-.971.368-.116.779-.34.723-.759.67-.163.95-1.517 1.656-1.877l-.095-.041-.061.142c-.171-.051-.33-.151-.251-.333l.285.123c.121-.484.675-.462.859-.813l-.143-.062c.196-.065.259-.251.253-.454.452-.208.951-.756 1.233-1.158l.143.061c-.155-.493.226-.361.397-.787l.169.13c-.338-.404.961-.524.369-.856l.259-.338c-.367-.178.094-.385.245-.176.025-.117.04-.293.172-.265-.344-.042-.341-.381-.584-.477.351-.151-.317-.675.267-.618-.117-.105-.386-.236-.298-.354l.312.191c.022-.295.319-.204.46-.28.015-.389-.58.146-.628-.244L40.347 3c-.046-.443.18-.909.297-1.337-.019.099-.054.235.06.251.114-.191.147-.404-.053-.53-.003.425-.548-.108-.755.181-.085-.073.094-.789-.181-.754l-.082.19.143.061c-.017.114-.152.08-.252.061l-.035.21c-.179-.147-.374-.347-.168-.523l-.237-.103c-.052.317-.534.141-.238-.103l-.19-.082-.062.143c-.469-.288-.723-.813-1.123-.204-.29.088-.523-.383-.771-.107-.096-.168-.341.013-.246.175-.573.029-1.314.414-.682 1.058-.274-.178-.692.059-.844.256l.238.102c-.258.423-.805-.287-.763.46-.169-.138-.321.202-.503.121l.123.109c.089-.214.287-.072.428-.209l-.062.537a19.219 19.219 0 00-.17-.13c-.7.342-.942 1.15-1.513 1.545l.4.116c-.028.151-.339.023-.509.006l-.008.278c-.214.435-1.841 1.226-1.438 1.634l-.034.21c-.673-.222-.276.198-.111.516-.343-.225-.727.361-1 .358.215.344-.33.482-.186.821-.292-.069-.249.347-.463.42l.237.103c-.537-.304-.591.623-1.129.526-.054.216.085.34.298.355-1.015.264-1.251 1.731-2.133 2.066l.421.069c-.542.372-.966.553-.901 1.302l-.163-.014.062-.142c-.483 0-.623.704-.883.999-.507.162-.36.351-.386.763-.26-.261-1.578.908-.941 1.003-.087.171-.315.23-.517.284l.149.177c-.348.227-.138.963-.791.786.081.205-.517.383-.361.577-.359.088-.569.316-.315.597-.27.106-.765.544-1.001.751l.095.041c-.11.153-.229.355-.021.442-.628-.064.604.891-.363.576.08-.103-.098-.249-.182-.361l.054.136c-.171.022-.17.297-.205.475a52.304 52.304 0 01-.312-.191c.084.316-.235.617-.41.95l.346-.019-.117.4-.175-.244c-.002.301-.506.29-.41.556-.589-.068-.875.591-1.314.954l.142.061c-.121.205-.4.406-.572.542l.203.313a10.86 10.86 0 01-.19-.082c-.557.711-1.43 1.157-1.644 2.109-.421-.059-.405.954-.676 1.173-.092-.095-.209-.137-.279-.007.207.098.417.243.305.469l-.238-.102.11-.122-.184.033-.013-.231c-.252.058-.509.417-.566.658-.457.146-.59 1.17-1.132 1.314-.172.513-1.229.841-1.024 1.587-.196-.011-.451-.02-.429.21a2.715 2.715 0 00-.095-.041c-.004.362-.221.615-.383 1.018.943.342.2.249-.029.72a.756.756 0 00-.243-.612c-.088.124-.186.409-.307.318-.219.564-.643 1.161-.748 1.012-.575.201.108-.953-.234-1.286-.313.482-.271-.072-.135-.34-.167-.043-.432-.172-.462.026l-.095-.041.286-.271-.326-.028c.039-.155.211-.291.361-.182-.104-.484-.53-.835-.811-1.253z">
+                  </path>
+                </g>
+              </svg>
+              Single Sign-On
+              <svg aria-hidden="true" viewBox="0 0 1300 10" height="3" preserveAspectRatio="none"
+                class="absolute top-0 left-0 w-full h-[3px] fill-sky-600/20">
+                <g buffered-rendering="static">
+                  <path
+                    d="M1264.29 4.85c-1.04-.029-17.58-1.783-26.79-1.35-.37.018-11.97-.122-12.33-.146-.7-.048-1.76-.174-2.06-.13-9.7 1.458-20.01-.138-29.8.212-9.71.348-19.24.035-28.79-.08-4.81-.06-9 .034-13.18.402-.34.029-.71.141-.86.128-10.56-.803-22.39.909-32.63-.561-1.93-.278-4.38-.178-6.66-.143-.51.346-1.18.73-3.66.558-2.1-.146-3.84-.456-5.88-.648-2.58-.244-6.03-.718-7.52.087-1.25.683 4.71.299 5.18 1.013-2.88-.171-6.11-.238-8.47-.535-3.21-.406-5.99-.487-9.57-.22-1.65.123-4.45.18-5.58.01-7.74-1.166-15.7-.01-23.5-.135-6.53-.107-3.97.723-3.05 1.428-1.41-.191-2.41-.286-3.09-.428-2.27-.47-2.53-1.764-8.48-.661-4.25-.645-9.56-.795-14.69-1-6.03-.243-6.8-.045-6 1.369.22.042.64.087.62.123-.07.104-.31.203-.49.305l-.72.085.49-.116c.13-.131.16-.263.1-.396-3.27-.349-6.17-.766-9.09-1.221-6.85-1.064-12.261-.719-15.806.836-9.731-1.469-9.731-1.469-17.434.517-4.97-.687-9.437-1.73-16.304-1.557-4.087.102-7.494-.071-11.182-.133-6.645-.112-13.223-.139-19.763-.478-2.518-.13-3.623.404-4.689.771l.589.111-.635-.101c-6.199.61-10.777-1.021-16.977-.409-9.018-1.128-14.884-.299-20.2 1.371-3.734-1.341-9.221-1.92-15.964-1.453-5.702.392-12.726-.804-17.467.596-1.504.445-4.296.175-5.807-.166-5.16-1.164-6.5-.121-8.665.471-4.512.112-3.643-1.363-8.56-1.019-4.676.326-6.18 1.162-7.612 1.96-.118.066-.177.136-.269.202-.66.47-1.092 1.103-4.898.68-2.452-.274-3.243-.777-.405-1.202 1.471-.221 3.387-.438 2.047-.819-1.151-.326-3.708-.349-5.154-.169-2.968.367-5.002.348-7.755-.1-3.532-.574-8.535-.494-12.884-.693-2.393-.11-2.838.338-3.237.68-1.092.181-1.085.363-.006.546-1.55.231-2.642.197-3.499-.156-2.367-.976-4.166-1.891-12.366-1.196-3.512.298-9.031-.184-13.622-.331-.654-.021-1.459-.236-1.772-.206-8.58.776-17.121-.089-25.655.001-1.805.019-2.544.247-2.355.571.242.135 1.969.194.628.409l-.902-.37c-1.923-.233-3.885-.487-6.331-.332-5.022.318-9.456.205-14.145-.307-3.374-.367-7.71-.677-10.823.233-.857.25-1.831.068-2.831-.045-4.781-.533-5.54.019-4.192.647 1.36.637-1.047 1.236 1.373 1.883-1.615-.068-2.505-.056-2.832-.129-3.073-.675-.163-2.203-7.795-2.147-5.134.037-9.652-.871-15.015-.208-1.648.204-3.544-.149-5.317-.253-9.227-.536-9.371-.525-15.943 1.022-6.605-1.033-14.06-1.331-22.379-.846-1.929.113-2.701-.123-3.59-.345.177-.046.523-.099.484-.138-.111-.121-.582-.116-1.19.006-3.904.436-7.063 1.227-12.622.348-3.263-.518-8.56-.144-12.942-.48-3.021-.231-6.48.233-6.284 1.053 1.739.459 2.688.93.732 1.541-.359-.567-.654-1.04-.948-1.513-3.649-.587-8.403-.846-12.517-1.28-6.212-.655-13.465-.489-19.455.426l-.706.082.595-.106c-1.511-.356-4.002-.659-5.834-.427-6.624.839-12.713.036-19.01-.076-1.766-.408-3.545-.351-5.336-.005-2.839.004-5.677.008-8.515.01-1.288-.144-1.589-.104-.778.14-.288.125-.785.361-.844.357-8.102-.489-16.185-.884-24.386-.063-3.597-.759-6.232-.452-8.626.245-.255.076-1.131.146-1.595.125-17.991-.824-26.885-.888-39.12-.27-1.073.053-2.871.193-3.159.127-2.969-.703-5.369-.506-9.659-.249-2.956.176-7.534-.287-11.17.314-1.177.193-2.949.018-4.244-.14-7.553-.923-15.237-.827-23.582-.311-3.06.189-7.37.21-10.862-.148.196-.043.582-.093.549-.129-.111-.119-.549-.11-1.118.023-4.977-.072-10.705.559-14.642-.528-.275-.076-2.021-.078-2.04-.065-1.982 1.359-8.548.075-12.772.757-3.663.592-10.457-.454-15.336-.212-6.971.346-14.557-.346-20.985.523-.471.063-1.589.044-2.165-.014-7.73-.799-16.951.133-24.726-.729-1.766-.196-4.565-.217-6.703-.142-12.288.427-24.779.084-37.184.408-6.749.177-14.303-.027-21.202-.173-6.18-.13-11.994.044-17.951.02-12.033-.049-24.066.104-36.112-.082-5.591-.085-11.438.04-16.892.167-17.604.411-35.268.551-52.918.592-14.466.035-28.434.592-42.612.868-15.041.292-28.552 1.382-42.965 1.94-2.217.085-4.545.185-6.475.389-4.878.514-4.728 1.471.288 1.929 2.001.184 4.421.371 6.54.335 15.636-.27 31.128.168 46.679.283 22.784.169 45.359-.419 68.052-.504 29.755-.114 59.34-.708 89.278-.504 18.9.129 38.152-.092 57.196-.019 15.126.057 30.35-.175 45.45.322 10.921.361 21.816-.337 32.861-.17 35.484.532 71.073.004 106.596.294 27.159.222 54.318-.062 81.477-.05 17.435.007 34.876.382 52.304.345 15.257-.031 30.566-.035 45.771.02 25.936.094 51.976-.333 77.847.336 3.773.098 7.638.101 11.464.102 32.031.016 64.121-.19 96.086.085 36.184.309 72.374.154 108.499.415 19.004.136 38.139.053 56.986.416 21.008.404 42.128.031 62.908.456 23.6.483 47.32.509 70.85.622 41.9.2 83.75.739 125.69.698 6.32-.005 12.82.272 19.34.271 6.14-.001 11.83-.066 17.48-.712 7.09-.809 22.11-1.993 14.86-1.993-13.62.001-20.21-2.073-33.78-2.445z">
+                  </path>
+                </g>
+              </svg>
+            </li>
+
+            <li class="flex relative items-center py-3 pl-4 xs:pl-12 sm:pl-20 pr-7">
+              <svg aria-hidden="true" viewBox="0 0 42 43" width="14"
+                class="w-3.5 h-auto shrink-0 fill-emerald-500 mr-3 mb-0.5">
+                <g buffered-rendering="static">
+                  <path
+                    d="M8.581 29.619l.23-.013-.122-.109-.109.122-.251-.334c.173.021.303-.076.382-.23-.204-.011-.359-.15-.481-.32l.449-.257-.496-.158.123-.285c-.185.119-.352-.103-.271-.286l.238.103c.112-.165-.12-.56-.208-.823-.463.198-.243-.375-.033-.578-.1-.069-.208-.037-.299.04.075-.26-.185-.381-.42-.463l.218-.244c.088.063.038.147-.034.21l.38.164c-.151-.373-.3-.725-.718-.817.376-.335.029-.572.227-.917a62.19 62.19 0 01-.38-.164l.081.204-.258-.055-.055.258c-.325-.101-.129-.537.185-.427-.013-.357-.331-.327-.395-.002l-.169-.129c.207-.111.373-.268.436-.488-.114-.017-.079-.152-.06-.252l-.442-.022c.078-.311-.073-.525-.399-.51a.352.352 0 00-.059-.646l.039.299c-.252-.107-.272-.485-.583-.477.136-.166.307-.365.178-.543-.155.094-.363.208-.28.386l-.406-.232c.671-.056.284-.37.145-.727-.201.263-.756-.165-.292-.238-.106-.134-.273-.148-.252.06-.304-.244-.81-.522-.561-.919-.239-.086-.535-.567-1.324-.7-.88-.149-2.255.059-2.42.172.169.305-.471.988.317.7-.996.784.074 2.219-.146 3.207l.19.082c-.125.514.345 1.373.64 1.912.136-.215.421-.218.422.069-.568-.247-.161.677.08.204.453.755-1.328-.077.56 1.313a1.944 1.944 0 01-.041.095 24.27 24.27 0 01-.237-.103c-.041.216-.24.27-.449.257l.351.885c.07-.135.196-.185.34-.135l.062-.537.19.082c-.086.312-.118.594-.159.89-.079-.118-.181-.289-.312-.191.233.263-.127.835.355.942.389.089.179.233-.042.292.621.909.612 2.247 1.366 3.099l-.197.197c.131.23.174.552.549.687l-.171.265c.357.527.43 1.989 1.537 1.792-.267.193-.557.179-.747-.098l-.008.279.184-.034c-.043.131.05.211.176.246l-.382.229c.192.298.758.424.467.878.154.033.218.159.203.313l.299-.039-.103.237.142.062c-.078.097-.158.194-.238.291l.163.014-.006-.115.054.136c.134-.099.296.08.427.184-.428.064-.521.891-.002.789l-.035.21.394.001-.013.164c-.135-.107-.261.064-.361.182.252.005.354.281.611.151-.176.221.148.388-.084.584.456-.116.179.302-.024.384.139.315.751-.133.538.514l.231-.012c.007.301-.333 1.928.228 1.169.225.233 1.136-.034.658.566.572.51 1.774-1.112 1.596-.043a.718.718 0 01.681-.27l-.047-.414c.748-.048 1.673-1.196 2.03-1.829l.123.109c-.001-.214.169-.317.374-.345l-.114-.388c.545-.166 1.311-.976 1.465-1.565l.258.055-.06-.252c.474-.429 1.877-1.732 1.841-2.305.529.162.813-1.193 1.326-1.372.469-.092-.187-.564.233-.604.996-.632 1.623-1.719 2.263-2.63.184-.237.751-.053.366-.518.418-.065.695-.695.845-1.044.375-.056.614-.991 1.009-1.03-.057-.337.54-.41.301-.828.155.012.288-.046.361-.183l.122.109c.03-.111-.014-.2-.129-.224.073-.148.197-.242.341-.135.04-.139.065-.296-.067-.367.261-.056.58-.33.361-.577.406.246.554-.257.362-.576.113-.036.141.077.149.177.249-.18.603-.646.642-.963.49.291.229-.141.443-.372-.112-.048-.27-.096-.245-.219.217-.006.268.228.496.158-.102-.15-.022-.296.117-.401l-.231.013c.046-.206.234-.215.367-.066.157-.241.293-.845.661-.617.088-.127.05-.251-.088-.32.401.028.434-.672.798-.67l-.135-.34c.25.017.521-.342.694-.433-.213-.015-.352-.138-.298-.354 1.133-.034 1.429-1.506 2.242-2.188l.101.156c.042-.094.083-.19.124-.285l-.184.034c-.097-.448.963-.598.594-.984l.279.008c-.237-.489 1.11-.574.342-.923.633.045 1.024-.691 1.227-1.274l.17.13c.257-.4.623-.596.676-1.174l.19.082c.254-.467.715-.957 1.036-1.356a45.172 45.172 0 01-.128-.225c.173-.129.368-.149.489.043.151-.325.314-.691.363-.971.368-.116.779-.34.723-.759.67-.163.95-1.517 1.656-1.877l-.095-.041-.061.142c-.171-.051-.33-.151-.251-.333l.285.123c.121-.484.675-.462.859-.813l-.143-.062c.196-.065.259-.251.253-.454.452-.208.951-.756 1.233-1.158l.143.061c-.155-.493.226-.361.397-.787l.169.13c-.338-.404.961-.524.369-.856l.259-.338c-.367-.178.094-.385.245-.176.025-.117.04-.293.172-.265-.344-.042-.341-.381-.584-.477.351-.151-.317-.675.267-.618-.117-.105-.386-.236-.298-.354l.312.191c.022-.295.319-.204.46-.28.015-.389-.58.146-.628-.244L40.347 3c-.046-.443.18-.909.297-1.337-.019.099-.054.235.06.251.114-.191.147-.404-.053-.53-.003.425-.548-.108-.755.181-.085-.073.094-.789-.181-.754l-.082.19.143.061c-.017.114-.152.08-.252.061l-.035.21c-.179-.147-.374-.347-.168-.523l-.237-.103c-.052.317-.534.141-.238-.103l-.19-.082-.062.143c-.469-.288-.723-.813-1.123-.204-.29.088-.523-.383-.771-.107-.096-.168-.341.013-.246.175-.573.029-1.314.414-.682 1.058-.274-.178-.692.059-.844.256l.238.102c-.258.423-.805-.287-.763.46-.169-.138-.321.202-.503.121l.123.109c.089-.214.287-.072.428-.209l-.062.537a19.219 19.219 0 00-.17-.13c-.7.342-.942 1.15-1.513 1.545l.4.116c-.028.151-.339.023-.509.006l-.008.278c-.214.435-1.841 1.226-1.438 1.634l-.034.21c-.673-.222-.276.198-.111.516-.343-.225-.727.361-1 .358.215.344-.33.482-.186.821-.292-.069-.249.347-.463.42l.237.103c-.537-.304-.591.623-1.129.526-.054.216.085.34.298.355-1.015.264-1.251 1.731-2.133 2.066l.421.069c-.542.372-.966.553-.901 1.302l-.163-.014.062-.142c-.483 0-.623.704-.883.999-.507.162-.36.351-.386.763-.26-.261-1.578.908-.941 1.003-.087.171-.315.23-.517.284l.149.177c-.348.227-.138.963-.791.786.081.205-.517.383-.361.577-.359.088-.569.316-.315.597-.27.106-.765.544-1.001.751l.095.041c-.11.153-.229.355-.021.442-.628-.064.604.891-.363.576.08-.103-.098-.249-.182-.361l.054.136c-.171.022-.17.297-.205.475a52.304 52.304 0 01-.312-.191c.084.316-.235.617-.41.95l.346-.019-.117.4-.175-.244c-.002.301-.506.29-.41.556-.589-.068-.875.591-1.314.954l.142.061c-.121.205-.4.406-.572.542l.203.313a10.86 10.86 0 01-.19-.082c-.557.711-1.43 1.157-1.644 2.109-.421-.059-.405.954-.676 1.173-.092-.095-.209-.137-.279-.007.207.098.417.243.305.469l-.238-.102.11-.122-.184.033-.013-.231c-.252.058-.509.417-.566.658-.457.146-.59 1.17-1.132 1.314-.172.513-1.229.841-1.024 1.587-.196-.011-.451-.02-.429.21a2.715 2.715 0 00-.095-.041c-.004.362-.221.615-.383 1.018.943.342.2.249-.029.72a.756.756 0 00-.243-.612c-.088.124-.186.409-.307.318-.219.564-.643 1.161-.748 1.012-.575.201.108-.953-.234-1.286-.313.482-.271-.072-.135-.34-.167-.043-.432-.172-.462.026l-.095-.041.286-.271-.326-.028c.039-.155.211-.291.361-.182-.104-.484-.53-.835-.811-1.253z">
+                  </path>
+                </g>
+              </svg>
+              Guaranteed Support Response Times
+              <svg aria-hidden="true" viewBox="0 0 1300 10" height="3" preserveAspectRatio="none"
+                class="absolute top-0 left-0 w-full h-[3px] fill-sky-600/20">
+                <g buffered-rendering="static">
+                  <path
+                    d="M1264.29 4.85c-1.04-.029-17.58-1.783-26.79-1.35-.37.018-11.97-.122-12.33-.146-.7-.048-1.76-.174-2.06-.13-9.7 1.458-20.01-.138-29.8.212-9.71.348-19.24.035-28.79-.08-4.81-.06-9 .034-13.18.402-.34.029-.71.141-.86.128-10.56-.803-22.39.909-32.63-.561-1.93-.278-4.38-.178-6.66-.143-.51.346-1.18.73-3.66.558-2.1-.146-3.84-.456-5.88-.648-2.58-.244-6.03-.718-7.52.087-1.25.683 4.71.299 5.18 1.013-2.88-.171-6.11-.238-8.47-.535-3.21-.406-5.99-.487-9.57-.22-1.65.123-4.45.18-5.58.01-7.74-1.166-15.7-.01-23.5-.135-6.53-.107-3.97.723-3.05 1.428-1.41-.191-2.41-.286-3.09-.428-2.27-.47-2.53-1.764-8.48-.661-4.25-.645-9.56-.795-14.69-1-6.03-.243-6.8-.045-6 1.369.22.042.64.087.62.123-.07.104-.31.203-.49.305l-.72.085.49-.116c.13-.131.16-.263.1-.396-3.27-.349-6.17-.766-9.09-1.221-6.85-1.064-12.261-.719-15.806.836-9.731-1.469-9.731-1.469-17.434.517-4.97-.687-9.437-1.73-16.304-1.557-4.087.102-7.494-.071-11.182-.133-6.645-.112-13.223-.139-19.763-.478-2.518-.13-3.623.404-4.689.771l.589.111-.635-.101c-6.199.61-10.777-1.021-16.977-.409-9.018-1.128-14.884-.299-20.2 1.371-3.734-1.341-9.221-1.92-15.964-1.453-5.702.392-12.726-.804-17.467.596-1.504.445-4.296.175-5.807-.166-5.16-1.164-6.5-.121-8.665.471-4.512.112-3.643-1.363-8.56-1.019-4.676.326-6.18 1.162-7.612 1.96-.118.066-.177.136-.269.202-.66.47-1.092 1.103-4.898.68-2.452-.274-3.243-.777-.405-1.202 1.471-.221 3.387-.438 2.047-.819-1.151-.326-3.708-.349-5.154-.169-2.968.367-5.002.348-7.755-.1-3.532-.574-8.535-.494-12.884-.693-2.393-.11-2.838.338-3.237.68-1.092.181-1.085.363-.006.546-1.55.231-2.642.197-3.499-.156-2.367-.976-4.166-1.891-12.366-1.196-3.512.298-9.031-.184-13.622-.331-.654-.021-1.459-.236-1.772-.206-8.58.776-17.121-.089-25.655.001-1.805.019-2.544.247-2.355.571.242.135 1.969.194.628.409l-.902-.37c-1.923-.233-3.885-.487-6.331-.332-5.022.318-9.456.205-14.145-.307-3.374-.367-7.71-.677-10.823.233-.857.25-1.831.068-2.831-.045-4.781-.533-5.54.019-4.192.647 1.36.637-1.047 1.236 1.373 1.883-1.615-.068-2.505-.056-2.832-.129-3.073-.675-.163-2.203-7.795-2.147-5.134.037-9.652-.871-15.015-.208-1.648.204-3.544-.149-5.317-.253-9.227-.536-9.371-.525-15.943 1.022-6.605-1.033-14.06-1.331-22.379-.846-1.929.113-2.701-.123-3.59-.345.177-.046.523-.099.484-.138-.111-.121-.582-.116-1.19.006-3.904.436-7.063 1.227-12.622.348-3.263-.518-8.56-.144-12.942-.48-3.021-.231-6.48.233-6.284 1.053 1.739.459 2.688.93.732 1.541-.359-.567-.654-1.04-.948-1.513-3.649-.587-8.403-.846-12.517-1.28-6.212-.655-13.465-.489-19.455.426l-.706.082.595-.106c-1.511-.356-4.002-.659-5.834-.427-6.624.839-12.713.036-19.01-.076-1.766-.408-3.545-.351-5.336-.005-2.839.004-5.677.008-8.515.01-1.288-.144-1.589-.104-.778.14-.288.125-.785.361-.844.357-8.102-.489-16.185-.884-24.386-.063-3.597-.759-6.232-.452-8.626.245-.255.076-1.131.146-1.595.125-17.991-.824-26.885-.888-39.12-.27-1.073.053-2.871.193-3.159.127-2.969-.703-5.369-.506-9.659-.249-2.956.176-7.534-.287-11.17.314-1.177.193-2.949.018-4.244-.14-7.553-.923-15.237-.827-23.582-.311-3.06.189-7.37.21-10.862-.148.196-.043.582-.093.549-.129-.111-.119-.549-.11-1.118.023-4.977-.072-10.705.559-14.642-.528-.275-.076-2.021-.078-2.04-.065-1.982 1.359-8.548.075-12.772.757-3.663.592-10.457-.454-15.336-.212-6.971.346-14.557-.346-20.985.523-.471.063-1.589.044-2.165-.014-7.73-.799-16.951.133-24.726-.729-1.766-.196-4.565-.217-6.703-.142-12.288.427-24.779.084-37.184.408-6.749.177-14.303-.027-21.202-.173-6.18-.13-11.994.044-17.951.02-12.033-.049-24.066.104-36.112-.082-5.591-.085-11.438.04-16.892.167-17.604.411-35.268.551-52.918.592-14.466.035-28.434.592-42.612.868-15.041.292-28.552 1.382-42.965 1.94-2.217.085-4.545.185-6.475.389-4.878.514-4.728 1.471.288 1.929 2.001.184 4.421.371 6.54.335 15.636-.27 31.128.168 46.679.283 22.784.169 45.359-.419 68.052-.504 29.755-.114 59.34-.708 89.278-.504 18.9.129 38.152-.092 57.196-.019 15.126.057 30.35-.175 45.45.322 10.921.361 21.816-.337 32.861-.17 35.484.532 71.073.004 106.596.294 27.159.222 54.318-.062 81.477-.05 17.435.007 34.876.382 52.304.345 15.257-.031 30.566-.035 45.771.02 25.936.094 51.976-.333 77.847.336 3.773.098 7.638.101 11.464.102 32.031.016 64.121-.19 96.086.085 36.184.309 72.374.154 108.499.415 19.004.136 38.139.053 56.986.416 21.008.404 42.128.031 62.908.456 23.6.483 47.32.509 70.85.622 41.9.2 83.75.739 125.69.698 6.32-.005 12.82.272 19.34.271 6.14-.001 11.83-.066 17.48-.712 7.09-.809 22.11-1.993 14.86-1.993-13.62.001-20.21-2.073-33.78-2.445z">
+                  </path>
+                </g>
+              </svg>
+            </li>
+
+            <li class="flex relative items-center py-3 pl-4 xs:pl-12 sm:pl-20 pr-7">
+              <svg aria-hidden="true" viewBox="0 0 42 43" width="14"
+                class="w-3.5 h-auto shrink-0 fill-emerald-500 mr-3 mb-0.5">
+                <g buffered-rendering="static">
+                  <path
+                    d="M8.581 29.619l.23-.013-.122-.109-.109.122-.251-.334c.173.021.303-.076.382-.23-.204-.011-.359-.15-.481-.32l.449-.257-.496-.158.123-.285c-.185.119-.352-.103-.271-.286l.238.103c.112-.165-.12-.56-.208-.823-.463.198-.243-.375-.033-.578-.1-.069-.208-.037-.299.04.075-.26-.185-.381-.42-.463l.218-.244c.088.063.038.147-.034.21l.38.164c-.151-.373-.3-.725-.718-.817.376-.335.029-.572.227-.917a62.19 62.19 0 01-.38-.164l.081.204-.258-.055-.055.258c-.325-.101-.129-.537.185-.427-.013-.357-.331-.327-.395-.002l-.169-.129c.207-.111.373-.268.436-.488-.114-.017-.079-.152-.06-.252l-.442-.022c.078-.311-.073-.525-.399-.51a.352.352 0 00-.059-.646l.039.299c-.252-.107-.272-.485-.583-.477.136-.166.307-.365.178-.543-.155.094-.363.208-.28.386l-.406-.232c.671-.056.284-.37.145-.727-.201.263-.756-.165-.292-.238-.106-.134-.273-.148-.252.06-.304-.244-.81-.522-.561-.919-.239-.086-.535-.567-1.324-.7-.88-.149-2.255.059-2.42.172.169.305-.471.988.317.7-.996.784.074 2.219-.146 3.207l.19.082c-.125.514.345 1.373.64 1.912.136-.215.421-.218.422.069-.568-.247-.161.677.08.204.453.755-1.328-.077.56 1.313a1.944 1.944 0 01-.041.095 24.27 24.27 0 01-.237-.103c-.041.216-.24.27-.449.257l.351.885c.07-.135.196-.185.34-.135l.062-.537.19.082c-.086.312-.118.594-.159.89-.079-.118-.181-.289-.312-.191.233.263-.127.835.355.942.389.089.179.233-.042.292.621.909.612 2.247 1.366 3.099l-.197.197c.131.23.174.552.549.687l-.171.265c.357.527.43 1.989 1.537 1.792-.267.193-.557.179-.747-.098l-.008.279.184-.034c-.043.131.05.211.176.246l-.382.229c.192.298.758.424.467.878.154.033.218.159.203.313l.299-.039-.103.237.142.062c-.078.097-.158.194-.238.291l.163.014-.006-.115.054.136c.134-.099.296.08.427.184-.428.064-.521.891-.002.789l-.035.21.394.001-.013.164c-.135-.107-.261.064-.361.182.252.005.354.281.611.151-.176.221.148.388-.084.584.456-.116.179.302-.024.384.139.315.751-.133.538.514l.231-.012c.007.301-.333 1.928.228 1.169.225.233 1.136-.034.658.566.572.51 1.774-1.112 1.596-.043a.718.718 0 01.681-.27l-.047-.414c.748-.048 1.673-1.196 2.03-1.829l.123.109c-.001-.214.169-.317.374-.345l-.114-.388c.545-.166 1.311-.976 1.465-1.565l.258.055-.06-.252c.474-.429 1.877-1.732 1.841-2.305.529.162.813-1.193 1.326-1.372.469-.092-.187-.564.233-.604.996-.632 1.623-1.719 2.263-2.63.184-.237.751-.053.366-.518.418-.065.695-.695.845-1.044.375-.056.614-.991 1.009-1.03-.057-.337.54-.41.301-.828.155.012.288-.046.361-.183l.122.109c.03-.111-.014-.2-.129-.224.073-.148.197-.242.341-.135.04-.139.065-.296-.067-.367.261-.056.58-.33.361-.577.406.246.554-.257.362-.576.113-.036.141.077.149.177.249-.18.603-.646.642-.963.49.291.229-.141.443-.372-.112-.048-.27-.096-.245-.219.217-.006.268.228.496.158-.102-.15-.022-.296.117-.401l-.231.013c.046-.206.234-.215.367-.066.157-.241.293-.845.661-.617.088-.127.05-.251-.088-.32.401.028.434-.672.798-.67l-.135-.34c.25.017.521-.342.694-.433-.213-.015-.352-.138-.298-.354 1.133-.034 1.429-1.506 2.242-2.188l.101.156c.042-.094.083-.19.124-.285l-.184.034c-.097-.448.963-.598.594-.984l.279.008c-.237-.489 1.11-.574.342-.923.633.045 1.024-.691 1.227-1.274l.17.13c.257-.4.623-.596.676-1.174l.19.082c.254-.467.715-.957 1.036-1.356a45.172 45.172 0 01-.128-.225c.173-.129.368-.149.489.043.151-.325.314-.691.363-.971.368-.116.779-.34.723-.759.67-.163.95-1.517 1.656-1.877l-.095-.041-.061.142c-.171-.051-.33-.151-.251-.333l.285.123c.121-.484.675-.462.859-.813l-.143-.062c.196-.065.259-.251.253-.454.452-.208.951-.756 1.233-1.158l.143.061c-.155-.493.226-.361.397-.787l.169.13c-.338-.404.961-.524.369-.856l.259-.338c-.367-.178.094-.385.245-.176.025-.117.04-.293.172-.265-.344-.042-.341-.381-.584-.477.351-.151-.317-.675.267-.618-.117-.105-.386-.236-.298-.354l.312.191c.022-.295.319-.204.46-.28.015-.389-.58.146-.628-.244L40.347 3c-.046-.443.18-.909.297-1.337-.019.099-.054.235.06.251.114-.191.147-.404-.053-.53-.003.425-.548-.108-.755.181-.085-.073.094-.789-.181-.754l-.082.19.143.061c-.017.114-.152.08-.252.061l-.035.21c-.179-.147-.374-.347-.168-.523l-.237-.103c-.052.317-.534.141-.238-.103l-.19-.082-.062.143c-.469-.288-.723-.813-1.123-.204-.29.088-.523-.383-.771-.107-.096-.168-.341.013-.246.175-.573.029-1.314.414-.682 1.058-.274-.178-.692.059-.844.256l.238.102c-.258.423-.805-.287-.763.46-.169-.138-.321.202-.503.121l.123.109c.089-.214.287-.072.428-.209l-.062.537a19.219 19.219 0 00-.17-.13c-.7.342-.942 1.15-1.513 1.545l.4.116c-.028.151-.339.023-.509.006l-.008.278c-.214.435-1.841 1.226-1.438 1.634l-.034.21c-.673-.222-.276.198-.111.516-.343-.225-.727.361-1 .358.215.344-.33.482-.186.821-.292-.069-.249.347-.463.42l.237.103c-.537-.304-.591.623-1.129.526-.054.216.085.34.298.355-1.015.264-1.251 1.731-2.133 2.066l.421.069c-.542.372-.966.553-.901 1.302l-.163-.014.062-.142c-.483 0-.623.704-.883.999-.507.162-.36.351-.386.763-.26-.261-1.578.908-.941 1.003-.087.171-.315.23-.517.284l.149.177c-.348.227-.138.963-.791.786.081.205-.517.383-.361.577-.359.088-.569.316-.315.597-.27.106-.765.544-1.001.751l.095.041c-.11.153-.229.355-.021.442-.628-.064.604.891-.363.576.08-.103-.098-.249-.182-.361l.054.136c-.171.022-.17.297-.205.475a52.304 52.304 0 01-.312-.191c.084.316-.235.617-.41.95l.346-.019-.117.4-.175-.244c-.002.301-.506.29-.41.556-.589-.068-.875.591-1.314.954l.142.061c-.121.205-.4.406-.572.542l.203.313a10.86 10.86 0 01-.19-.082c-.557.711-1.43 1.157-1.644 2.109-.421-.059-.405.954-.676 1.173-.092-.095-.209-.137-.279-.007.207.098.417.243.305.469l-.238-.102.11-.122-.184.033-.013-.231c-.252.058-.509.417-.566.658-.457.146-.59 1.17-1.132 1.314-.172.513-1.229.841-1.024 1.587-.196-.011-.451-.02-.429.21a2.715 2.715 0 00-.095-.041c-.004.362-.221.615-.383 1.018.943.342.2.249-.029.72a.756.756 0 00-.243-.612c-.088.124-.186.409-.307.318-.219.564-.643 1.161-.748 1.012-.575.201.108-.953-.234-1.286-.313.482-.271-.072-.135-.34-.167-.043-.432-.172-.462.026l-.095-.041.286-.271-.326-.028c.039-.155.211-.291.361-.182-.104-.484-.53-.835-.811-1.253z">
+                  </path>
+                </g>
+              </svg>
+              SOC2 Type 2 Attested
+              <svg aria-hidden="true" viewBox="0 0 1300 10" height="3" preserveAspectRatio="none"
+                class="absolute top-0 left-0 w-full h-[3px] fill-sky-600/20">
+                <g buffered-rendering="static">
+                  <path
+                    d="M1264.29 4.85c-1.04-.029-17.58-1.783-26.79-1.35-.37.018-11.97-.122-12.33-.146-.7-.048-1.76-.174-2.06-.13-9.7 1.458-20.01-.138-29.8.212-9.71.348-19.24.035-28.79-.08-4.81-.06-9 .034-13.18.402-.34.029-.71.141-.86.128-10.56-.803-22.39.909-32.63-.561-1.93-.278-4.38-.178-6.66-.143-.51.346-1.18.73-3.66.558-2.1-.146-3.84-.456-5.88-.648-2.58-.244-6.03-.718-7.52.087-1.25.683 4.71.299 5.18 1.013-2.88-.171-6.11-.238-8.47-.535-3.21-.406-5.99-.487-9.57-.22-1.65.123-4.45.18-5.58.01-7.74-1.166-15.7-.01-23.5-.135-6.53-.107-3.97.723-3.05 1.428-1.41-.191-2.41-.286-3.09-.428-2.27-.47-2.53-1.764-8.48-.661-4.25-.645-9.56-.795-14.69-1-6.03-.243-6.8-.045-6 1.369.22.042.64.087.62.123-.07.104-.31.203-.49.305l-.72.085.49-.116c.13-.131.16-.263.1-.396-3.27-.349-6.17-.766-9.09-1.221-6.85-1.064-12.261-.719-15.806.836-9.731-1.469-9.731-1.469-17.434.517-4.97-.687-9.437-1.73-16.304-1.557-4.087.102-7.494-.071-11.182-.133-6.645-.112-13.223-.139-19.763-.478-2.518-.13-3.623.404-4.689.771l.589.111-.635-.101c-6.199.61-10.777-1.021-16.977-.409-9.018-1.128-14.884-.299-20.2 1.371-3.734-1.341-9.221-1.92-15.964-1.453-5.702.392-12.726-.804-17.467.596-1.504.445-4.296.175-5.807-.166-5.16-1.164-6.5-.121-8.665.471-4.512.112-3.643-1.363-8.56-1.019-4.676.326-6.18 1.162-7.612 1.96-.118.066-.177.136-.269.202-.66.47-1.092 1.103-4.898.68-2.452-.274-3.243-.777-.405-1.202 1.471-.221 3.387-.438 2.047-.819-1.151-.326-3.708-.349-5.154-.169-2.968.367-5.002.348-7.755-.1-3.532-.574-8.535-.494-12.884-.693-2.393-.11-2.838.338-3.237.68-1.092.181-1.085.363-.006.546-1.55.231-2.642.197-3.499-.156-2.367-.976-4.166-1.891-12.366-1.196-3.512.298-9.031-.184-13.622-.331-.654-.021-1.459-.236-1.772-.206-8.58.776-17.121-.089-25.655.001-1.805.019-2.544.247-2.355.571.242.135 1.969.194.628.409l-.902-.37c-1.923-.233-3.885-.487-6.331-.332-5.022.318-9.456.205-14.145-.307-3.374-.367-7.71-.677-10.823.233-.857.25-1.831.068-2.831-.045-4.781-.533-5.54.019-4.192.647 1.36.637-1.047 1.236 1.373 1.883-1.615-.068-2.505-.056-2.832-.129-3.073-.675-.163-2.203-7.795-2.147-5.134.037-9.652-.871-15.015-.208-1.648.204-3.544-.149-5.317-.253-9.227-.536-9.371-.525-15.943 1.022-6.605-1.033-14.06-1.331-22.379-.846-1.929.113-2.701-.123-3.59-.345.177-.046.523-.099.484-.138-.111-.121-.582-.116-1.19.006-3.904.436-7.063 1.227-12.622.348-3.263-.518-8.56-.144-12.942-.48-3.021-.231-6.48.233-6.284 1.053 1.739.459 2.688.93.732 1.541-.359-.567-.654-1.04-.948-1.513-3.649-.587-8.403-.846-12.517-1.28-6.212-.655-13.465-.489-19.455.426l-.706.082.595-.106c-1.511-.356-4.002-.659-5.834-.427-6.624.839-12.713.036-19.01-.076-1.766-.408-3.545-.351-5.336-.005-2.839.004-5.677.008-8.515.01-1.288-.144-1.589-.104-.778.14-.288.125-.785.361-.844.357-8.102-.489-16.185-.884-24.386-.063-3.597-.759-6.232-.452-8.626.245-.255.076-1.131.146-1.595.125-17.991-.824-26.885-.888-39.12-.27-1.073.053-2.871.193-3.159.127-2.969-.703-5.369-.506-9.659-.249-2.956.176-7.534-.287-11.17.314-1.177.193-2.949.018-4.244-.14-7.553-.923-15.237-.827-23.582-.311-3.06.189-7.37.21-10.862-.148.196-.043.582-.093.549-.129-.111-.119-.549-.11-1.118.023-4.977-.072-10.705.559-14.642-.528-.275-.076-2.021-.078-2.04-.065-1.982 1.359-8.548.075-12.772.757-3.663.592-10.457-.454-15.336-.212-6.971.346-14.557-.346-20.985.523-.471.063-1.589.044-2.165-.014-7.73-.799-16.951.133-24.726-.729-1.766-.196-4.565-.217-6.703-.142-12.288.427-24.779.084-37.184.408-6.749.177-14.303-.027-21.202-.173-6.18-.13-11.994.044-17.951.02-12.033-.049-24.066.104-36.112-.082-5.591-.085-11.438.04-16.892.167-17.604.411-35.268.551-52.918.592-14.466.035-28.434.592-42.612.868-15.041.292-28.552 1.382-42.965 1.94-2.217.085-4.545.185-6.475.389-4.878.514-4.728 1.471.288 1.929 2.001.184 4.421.371 6.54.335 15.636-.27 31.128.168 46.679.283 22.784.169 45.359-.419 68.052-.504 29.755-.114 59.34-.708 89.278-.504 18.9.129 38.152-.092 57.196-.019 15.126.057 30.35-.175 45.45.322 10.921.361 21.816-.337 32.861-.17 35.484.532 71.073.004 106.596.294 27.159.222 54.318-.062 81.477-.05 17.435.007 34.876.382 52.304.345 15.257-.031 30.566-.035 45.771.02 25.936.094 51.976-.333 77.847.336 3.773.098 7.638.101 11.464.102 32.031.016 64.121-.19 96.086.085 36.184.309 72.374.154 108.499.415 19.004.136 38.139.053 56.986.416 21.008.404 42.128.031 62.908.456 23.6.483 47.32.509 70.85.622 41.9.2 83.75.739 125.69.698 6.32-.005 12.82.272 19.34.271 6.14-.001 11.83-.066 17.48-.712 7.09-.809 22.11-1.993 14.86-1.993-13.62.001-20.21-2.073-33.78-2.445z">
+                  </path>
+                </g>
+              </svg>
+            </li>
+
+            <li class="flex relative items-center py-3 pl-4 xs:pl-12 sm:pl-20 pr-7">
+              <svg aria-hidden="true" viewBox="0 0 42 43" width="14"
+                class="w-3.5 h-auto shrink-0 fill-emerald-500 mr-3 mb-0.5">
+                <g buffered-rendering="static">
+                  <path
+                    d="M8.581 29.619l.23-.013-.122-.109-.109.122-.251-.334c.173.021.303-.076.382-.23-.204-.011-.359-.15-.481-.32l.449-.257-.496-.158.123-.285c-.185.119-.352-.103-.271-.286l.238.103c.112-.165-.12-.56-.208-.823-.463.198-.243-.375-.033-.578-.1-.069-.208-.037-.299.04.075-.26-.185-.381-.42-.463l.218-.244c.088.063.038.147-.034.21l.38.164c-.151-.373-.3-.725-.718-.817.376-.335.029-.572.227-.917a62.19 62.19 0 01-.38-.164l.081.204-.258-.055-.055.258c-.325-.101-.129-.537.185-.427-.013-.357-.331-.327-.395-.002l-.169-.129c.207-.111.373-.268.436-.488-.114-.017-.079-.152-.06-.252l-.442-.022c.078-.311-.073-.525-.399-.51a.352.352 0 00-.059-.646l.039.299c-.252-.107-.272-.485-.583-.477.136-.166.307-.365.178-.543-.155.094-.363.208-.28.386l-.406-.232c.671-.056.284-.37.145-.727-.201.263-.756-.165-.292-.238-.106-.134-.273-.148-.252.06-.304-.244-.81-.522-.561-.919-.239-.086-.535-.567-1.324-.7-.88-.149-2.255.059-2.42.172.169.305-.471.988.317.7-.996.784.074 2.219-.146 3.207l.19.082c-.125.514.345 1.373.64 1.912.136-.215.421-.218.422.069-.568-.247-.161.677.08.204.453.755-1.328-.077.56 1.313a1.944 1.944 0 01-.041.095 24.27 24.27 0 01-.237-.103c-.041.216-.24.27-.449.257l.351.885c.07-.135.196-.185.34-.135l.062-.537.19.082c-.086.312-.118.594-.159.89-.079-.118-.181-.289-.312-.191.233.263-.127.835.355.942.389.089.179.233-.042.292.621.909.612 2.247 1.366 3.099l-.197.197c.131.23.174.552.549.687l-.171.265c.357.527.43 1.989 1.537 1.792-.267.193-.557.179-.747-.098l-.008.279.184-.034c-.043.131.05.211.176.246l-.382.229c.192.298.758.424.467.878.154.033.218.159.203.313l.299-.039-.103.237.142.062c-.078.097-.158.194-.238.291l.163.014-.006-.115.054.136c.134-.099.296.08.427.184-.428.064-.521.891-.002.789l-.035.21.394.001-.013.164c-.135-.107-.261.064-.361.182.252.005.354.281.611.151-.176.221.148.388-.084.584.456-.116.179.302-.024.384.139.315.751-.133.538.514l.231-.012c.007.301-.333 1.928.228 1.169.225.233 1.136-.034.658.566.572.51 1.774-1.112 1.596-.043a.718.718 0 01.681-.27l-.047-.414c.748-.048 1.673-1.196 2.03-1.829l.123.109c-.001-.214.169-.317.374-.345l-.114-.388c.545-.166 1.311-.976 1.465-1.565l.258.055-.06-.252c.474-.429 1.877-1.732 1.841-2.305.529.162.813-1.193 1.326-1.372.469-.092-.187-.564.233-.604.996-.632 1.623-1.719 2.263-2.63.184-.237.751-.053.366-.518.418-.065.695-.695.845-1.044.375-.056.614-.991 1.009-1.03-.057-.337.54-.41.301-.828.155.012.288-.046.361-.183l.122.109c.03-.111-.014-.2-.129-.224.073-.148.197-.242.341-.135.04-.139.065-.296-.067-.367.261-.056.58-.33.361-.577.406.246.554-.257.362-.576.113-.036.141.077.149.177.249-.18.603-.646.642-.963.49.291.229-.141.443-.372-.112-.048-.27-.096-.245-.219.217-.006.268.228.496.158-.102-.15-.022-.296.117-.401l-.231.013c.046-.206.234-.215.367-.066.157-.241.293-.845.661-.617.088-.127.05-.251-.088-.32.401.028.434-.672.798-.67l-.135-.34c.25.017.521-.342.694-.433-.213-.015-.352-.138-.298-.354 1.133-.034 1.429-1.506 2.242-2.188l.101.156c.042-.094.083-.19.124-.285l-.184.034c-.097-.448.963-.598.594-.984l.279.008c-.237-.489 1.11-.574.342-.923.633.045 1.024-.691 1.227-1.274l.17.13c.257-.4.623-.596.676-1.174l.19.082c.254-.467.715-.957 1.036-1.356a45.172 45.172 0 01-.128-.225c.173-.129.368-.149.489.043.151-.325.314-.691.363-.971.368-.116.779-.34.723-.759.67-.163.95-1.517 1.656-1.877l-.095-.041-.061.142c-.171-.051-.33-.151-.251-.333l.285.123c.121-.484.675-.462.859-.813l-.143-.062c.196-.065.259-.251.253-.454.452-.208.951-.756 1.233-1.158l.143.061c-.155-.493.226-.361.397-.787l.169.13c-.338-.404.961-.524.369-.856l.259-.338c-.367-.178.094-.385.245-.176.025-.117.04-.293.172-.265-.344-.042-.341-.381-.584-.477.351-.151-.317-.675.267-.618-.117-.105-.386-.236-.298-.354l.312.191c.022-.295.319-.204.46-.28.015-.389-.58.146-.628-.244L40.347 3c-.046-.443.18-.909.297-1.337-.019.099-.054.235.06.251.114-.191.147-.404-.053-.53-.003.425-.548-.108-.755.181-.085-.073.094-.789-.181-.754l-.082.19.143.061c-.017.114-.152.08-.252.061l-.035.21c-.179-.147-.374-.347-.168-.523l-.237-.103c-.052.317-.534.141-.238-.103l-.19-.082-.062.143c-.469-.288-.723-.813-1.123-.204-.29.088-.523-.383-.771-.107-.096-.168-.341.013-.246.175-.573.029-1.314.414-.682 1.058-.274-.178-.692.059-.844.256l.238.102c-.258.423-.805-.287-.763.46-.169-.138-.321.202-.503.121l.123.109c.089-.214.287-.072.428-.209l-.062.537a19.219 19.219 0 00-.17-.13c-.7.342-.942 1.15-1.513 1.545l.4.116c-.028.151-.339.023-.509.006l-.008.278c-.214.435-1.841 1.226-1.438 1.634l-.034.21c-.673-.222-.276.198-.111.516-.343-.225-.727.361-1 .358.215.344-.33.482-.186.821-.292-.069-.249.347-.463.42l.237.103c-.537-.304-.591.623-1.129.526-.054.216.085.34.298.355-1.015.264-1.251 1.731-2.133 2.066l.421.069c-.542.372-.966.553-.901 1.302l-.163-.014.062-.142c-.483 0-.623.704-.883.999-.507.162-.36.351-.386.763-.26-.261-1.578.908-.941 1.003-.087.171-.315.23-.517.284l.149.177c-.348.227-.138.963-.791.786.081.205-.517.383-.361.577-.359.088-.569.316-.315.597-.27.106-.765.544-1.001.751l.095.041c-.11.153-.229.355-.021.442-.628-.064.604.891-.363.576.08-.103-.098-.249-.182-.361l.054.136c-.171.022-.17.297-.205.475a52.304 52.304 0 01-.312-.191c.084.316-.235.617-.41.95l.346-.019-.117.4-.175-.244c-.002.301-.506.29-.41.556-.589-.068-.875.591-1.314.954l.142.061c-.121.205-.4.406-.572.542l.203.313a10.86 10.86 0 01-.19-.082c-.557.711-1.43 1.157-1.644 2.109-.421-.059-.405.954-.676 1.173-.092-.095-.209-.137-.279-.007.207.098.417.243.305.469l-.238-.102.11-.122-.184.033-.013-.231c-.252.058-.509.417-.566.658-.457.146-.59 1.17-1.132 1.314-.172.513-1.229.841-1.024 1.587-.196-.011-.451-.02-.429.21a2.715 2.715 0 00-.095-.041c-.004.362-.221.615-.383 1.018.943.342.2.249-.029.72a.756.756 0 00-.243-.612c-.088.124-.186.409-.307.318-.219.564-.643 1.161-.748 1.012-.575.201.108-.953-.234-1.286-.313.482-.271-.072-.135-.34-.167-.043-.432-.172-.462.026l-.095-.041.286-.271-.326-.028c.039-.155.211-.291.361-.182-.104-.484-.53-.835-.811-1.253z">
+                  </path>
+                </g>
+              </svg>
+              Memory-safe Rust and Go stack
+              <svg aria-hidden="true" viewBox="0 0 1300 10" height="3" preserveAspectRatio="none"
+                class="absolute top-0 left-0 w-full h-[3px] fill-sky-600/20">
+                <g buffered-rendering="static">
+                  <path
+                    d="M1264.29 4.85c-1.04-.029-17.58-1.783-26.79-1.35-.37.018-11.97-.122-12.33-.146-.7-.048-1.76-.174-2.06-.13-9.7 1.458-20.01-.138-29.8.212-9.71.348-19.24.035-28.79-.08-4.81-.06-9 .034-13.18.402-.34.029-.71.141-.86.128-10.56-.803-22.39.909-32.63-.561-1.93-.278-4.38-.178-6.66-.143-.51.346-1.18.73-3.66.558-2.1-.146-3.84-.456-5.88-.648-2.58-.244-6.03-.718-7.52.087-1.25.683 4.71.299 5.18 1.013-2.88-.171-6.11-.238-8.47-.535-3.21-.406-5.99-.487-9.57-.22-1.65.123-4.45.18-5.58.01-7.74-1.166-15.7-.01-23.5-.135-6.53-.107-3.97.723-3.05 1.428-1.41-.191-2.41-.286-3.09-.428-2.27-.47-2.53-1.764-8.48-.661-4.25-.645-9.56-.795-14.69-1-6.03-.243-6.8-.045-6 1.369.22.042.64.087.62.123-.07.104-.31.203-.49.305l-.72.085.49-.116c.13-.131.16-.263.1-.396-3.27-.349-6.17-.766-9.09-1.221-6.85-1.064-12.261-.719-15.806.836-9.731-1.469-9.731-1.469-17.434.517-4.97-.687-9.437-1.73-16.304-1.557-4.087.102-7.494-.071-11.182-.133-6.645-.112-13.223-.139-19.763-.478-2.518-.13-3.623.404-4.689.771l.589.111-.635-.101c-6.199.61-10.777-1.021-16.977-.409-9.018-1.128-14.884-.299-20.2 1.371-3.734-1.341-9.221-1.92-15.964-1.453-5.702.392-12.726-.804-17.467.596-1.504.445-4.296.175-5.807-.166-5.16-1.164-6.5-.121-8.665.471-4.512.112-3.643-1.363-8.56-1.019-4.676.326-6.18 1.162-7.612 1.96-.118.066-.177.136-.269.202-.66.47-1.092 1.103-4.898.68-2.452-.274-3.243-.777-.405-1.202 1.471-.221 3.387-.438 2.047-.819-1.151-.326-3.708-.349-5.154-.169-2.968.367-5.002.348-7.755-.1-3.532-.574-8.535-.494-12.884-.693-2.393-.11-2.838.338-3.237.68-1.092.181-1.085.363-.006.546-1.55.231-2.642.197-3.499-.156-2.367-.976-4.166-1.891-12.366-1.196-3.512.298-9.031-.184-13.622-.331-.654-.021-1.459-.236-1.772-.206-8.58.776-17.121-.089-25.655.001-1.805.019-2.544.247-2.355.571.242.135 1.969.194.628.409l-.902-.37c-1.923-.233-3.885-.487-6.331-.332-5.022.318-9.456.205-14.145-.307-3.374-.367-7.71-.677-10.823.233-.857.25-1.831.068-2.831-.045-4.781-.533-5.54.019-4.192.647 1.36.637-1.047 1.236 1.373 1.883-1.615-.068-2.505-.056-2.832-.129-3.073-.675-.163-2.203-7.795-2.147-5.134.037-9.652-.871-15.015-.208-1.648.204-3.544-.149-5.317-.253-9.227-.536-9.371-.525-15.943 1.022-6.605-1.033-14.06-1.331-22.379-.846-1.929.113-2.701-.123-3.59-.345.177-.046.523-.099.484-.138-.111-.121-.582-.116-1.19.006-3.904.436-7.063 1.227-12.622.348-3.263-.518-8.56-.144-12.942-.48-3.021-.231-6.48.233-6.284 1.053 1.739.459 2.688.93.732 1.541-.359-.567-.654-1.04-.948-1.513-3.649-.587-8.403-.846-12.517-1.28-6.212-.655-13.465-.489-19.455.426l-.706.082.595-.106c-1.511-.356-4.002-.659-5.834-.427-6.624.839-12.713.036-19.01-.076-1.766-.408-3.545-.351-5.336-.005-2.839.004-5.677.008-8.515.01-1.288-.144-1.589-.104-.778.14-.288.125-.785.361-.844.357-8.102-.489-16.185-.884-24.386-.063-3.597-.759-6.232-.452-8.626.245-.255.076-1.131.146-1.595.125-17.991-.824-26.885-.888-39.12-.27-1.073.053-2.871.193-3.159.127-2.969-.703-5.369-.506-9.659-.249-2.956.176-7.534-.287-11.17.314-1.177.193-2.949.018-4.244-.14-7.553-.923-15.237-.827-23.582-.311-3.06.189-7.37.21-10.862-.148.196-.043.582-.093.549-.129-.111-.119-.549-.11-1.118.023-4.977-.072-10.705.559-14.642-.528-.275-.076-2.021-.078-2.04-.065-1.982 1.359-8.548.075-12.772.757-3.663.592-10.457-.454-15.336-.212-6.971.346-14.557-.346-20.985.523-.471.063-1.589.044-2.165-.014-7.73-.799-16.951.133-24.726-.729-1.766-.196-4.565-.217-6.703-.142-12.288.427-24.779.084-37.184.408-6.749.177-14.303-.027-21.202-.173-6.18-.13-11.994.044-17.951.02-12.033-.049-24.066.104-36.112-.082-5.591-.085-11.438.04-16.892.167-17.604.411-35.268.551-52.918.592-14.466.035-28.434.592-42.612.868-15.041.292-28.552 1.382-42.965 1.94-2.217.085-4.545.185-6.475.389-4.878.514-4.728 1.471.288 1.929 2.001.184 4.421.371 6.54.335 15.636-.27 31.128.168 46.679.283 22.784.169 45.359-.419 68.052-.504 29.755-.114 59.34-.708 89.278-.504 18.9.129 38.152-.092 57.196-.019 15.126.057 30.35-.175 45.45.322 10.921.361 21.816-.337 32.861-.17 35.484.532 71.073.004 106.596.294 27.159.222 54.318-.062 81.477-.05 17.435.007 34.876.382 52.304.345 15.257-.031 30.566-.035 45.771.02 25.936.094 51.976-.333 77.847.336 3.773.098 7.638.101 11.464.102 32.031.016 64.121-.19 96.086.085 36.184.309 72.374.154 108.499.415 19.004.136 38.139.053 56.986.416 21.008.404 42.128.031 62.908.456 23.6.483 47.32.509 70.85.622 41.9.2 83.75.739 125.69.698 6.32-.005 12.82.272 19.34.271 6.14-.001 11.83-.066 17.48-.712 7.09-.809 22.11-1.993 14.86-1.993-13.62.001-20.21-2.073-33.78-2.445z">
+                  </path>
+                </g>
+              </svg>
+            </li>
+
+            <li class="flex relative items-center py-3 pl-4 xs:pl-12 sm:pl-20 pr-7">
+              <svg aria-hidden="true" viewBox="0 0 42 43" width="14"
+                class="w-3.5 h-auto shrink-0 fill-emerald-500 mr-3 mb-0.5">
+                <g buffered-rendering="static">
+                  <path
+                    d="M8.581 29.619l.23-.013-.122-.109-.109.122-.251-.334c.173.021.303-.076.382-.23-.204-.011-.359-.15-.481-.32l.449-.257-.496-.158.123-.285c-.185.119-.352-.103-.271-.286l.238.103c.112-.165-.12-.56-.208-.823-.463.198-.243-.375-.033-.578-.1-.069-.208-.037-.299.04.075-.26-.185-.381-.42-.463l.218-.244c.088.063.038.147-.034.21l.38.164c-.151-.373-.3-.725-.718-.817.376-.335.029-.572.227-.917a62.19 62.19 0 01-.38-.164l.081.204-.258-.055-.055.258c-.325-.101-.129-.537.185-.427-.013-.357-.331-.327-.395-.002l-.169-.129c.207-.111.373-.268.436-.488-.114-.017-.079-.152-.06-.252l-.442-.022c.078-.311-.073-.525-.399-.51a.352.352 0 00-.059-.646l.039.299c-.252-.107-.272-.485-.583-.477.136-.166.307-.365.178-.543-.155.094-.363.208-.28.386l-.406-.232c.671-.056.284-.37.145-.727-.201.263-.756-.165-.292-.238-.106-.134-.273-.148-.252.06-.304-.244-.81-.522-.561-.919-.239-.086-.535-.567-1.324-.7-.88-.149-2.255.059-2.42.172.169.305-.471.988.317.7-.996.784.074 2.219-.146 3.207l.19.082c-.125.514.345 1.373.64 1.912.136-.215.421-.218.422.069-.568-.247-.161.677.08.204.453.755-1.328-.077.56 1.313a1.944 1.944 0 01-.041.095 24.27 24.27 0 01-.237-.103c-.041.216-.24.27-.449.257l.351.885c.07-.135.196-.185.34-.135l.062-.537.19.082c-.086.312-.118.594-.159.89-.079-.118-.181-.289-.312-.191.233.263-.127.835.355.942.389.089.179.233-.042.292.621.909.612 2.247 1.366 3.099l-.197.197c.131.23.174.552.549.687l-.171.265c.357.527.43 1.989 1.537 1.792-.267.193-.557.179-.747-.098l-.008.279.184-.034c-.043.131.05.211.176.246l-.382.229c.192.298.758.424.467.878.154.033.218.159.203.313l.299-.039-.103.237.142.062c-.078.097-.158.194-.238.291l.163.014-.006-.115.054.136c.134-.099.296.08.427.184-.428.064-.521.891-.002.789l-.035.21.394.001-.013.164c-.135-.107-.261.064-.361.182.252.005.354.281.611.151-.176.221.148.388-.084.584.456-.116.179.302-.024.384.139.315.751-.133.538.514l.231-.012c.007.301-.333 1.928.228 1.169.225.233 1.136-.034.658.566.572.51 1.774-1.112 1.596-.043a.718.718 0 01.681-.27l-.047-.414c.748-.048 1.673-1.196 2.03-1.829l.123.109c-.001-.214.169-.317.374-.345l-.114-.388c.545-.166 1.311-.976 1.465-1.565l.258.055-.06-.252c.474-.429 1.877-1.732 1.841-2.305.529.162.813-1.193 1.326-1.372.469-.092-.187-.564.233-.604.996-.632 1.623-1.719 2.263-2.63.184-.237.751-.053.366-.518.418-.065.695-.695.845-1.044.375-.056.614-.991 1.009-1.03-.057-.337.54-.41.301-.828.155.012.288-.046.361-.183l.122.109c.03-.111-.014-.2-.129-.224.073-.148.197-.242.341-.135.04-.139.065-.296-.067-.367.261-.056.58-.33.361-.577.406.246.554-.257.362-.576.113-.036.141.077.149.177.249-.18.603-.646.642-.963.49.291.229-.141.443-.372-.112-.048-.27-.096-.245-.219.217-.006.268.228.496.158-.102-.15-.022-.296.117-.401l-.231.013c.046-.206.234-.215.367-.066.157-.241.293-.845.661-.617.088-.127.05-.251-.088-.32.401.028.434-.672.798-.67l-.135-.34c.25.017.521-.342.694-.433-.213-.015-.352-.138-.298-.354 1.133-.034 1.429-1.506 2.242-2.188l.101.156c.042-.094.083-.19.124-.285l-.184.034c-.097-.448.963-.598.594-.984l.279.008c-.237-.489 1.11-.574.342-.923.633.045 1.024-.691 1.227-1.274l.17.13c.257-.4.623-.596.676-1.174l.19.082c.254-.467.715-.957 1.036-1.356a45.172 45.172 0 01-.128-.225c.173-.129.368-.149.489.043.151-.325.314-.691.363-.971.368-.116.779-.34.723-.759.67-.163.95-1.517 1.656-1.877l-.095-.041-.061.142c-.171-.051-.33-.151-.251-.333l.285.123c.121-.484.675-.462.859-.813l-.143-.062c.196-.065.259-.251.253-.454.452-.208.951-.756 1.233-1.158l.143.061c-.155-.493.226-.361.397-.787l.169.13c-.338-.404.961-.524.369-.856l.259-.338c-.367-.178.094-.385.245-.176.025-.117.04-.293.172-.265-.344-.042-.341-.381-.584-.477.351-.151-.317-.675.267-.618-.117-.105-.386-.236-.298-.354l.312.191c.022-.295.319-.204.46-.28.015-.389-.58.146-.628-.244L40.347 3c-.046-.443.18-.909.297-1.337-.019.099-.054.235.06.251.114-.191.147-.404-.053-.53-.003.425-.548-.108-.755.181-.085-.073.094-.789-.181-.754l-.082.19.143.061c-.017.114-.152.08-.252.061l-.035.21c-.179-.147-.374-.347-.168-.523l-.237-.103c-.052.317-.534.141-.238-.103l-.19-.082-.062.143c-.469-.288-.723-.813-1.123-.204-.29.088-.523-.383-.771-.107-.096-.168-.341.013-.246.175-.573.029-1.314.414-.682 1.058-.274-.178-.692.059-.844.256l.238.102c-.258.423-.805-.287-.763.46-.169-.138-.321.202-.503.121l.123.109c.089-.214.287-.072.428-.209l-.062.537a19.219 19.219 0 00-.17-.13c-.7.342-.942 1.15-1.513 1.545l.4.116c-.028.151-.339.023-.509.006l-.008.278c-.214.435-1.841 1.226-1.438 1.634l-.034.21c-.673-.222-.276.198-.111.516-.343-.225-.727.361-1 .358.215.344-.33.482-.186.821-.292-.069-.249.347-.463.42l.237.103c-.537-.304-.591.623-1.129.526-.054.216.085.34.298.355-1.015.264-1.251 1.731-2.133 2.066l.421.069c-.542.372-.966.553-.901 1.302l-.163-.014.062-.142c-.483 0-.623.704-.883.999-.507.162-.36.351-.386.763-.26-.261-1.578.908-.941 1.003-.087.171-.315.23-.517.284l.149.177c-.348.227-.138.963-.791.786.081.205-.517.383-.361.577-.359.088-.569.316-.315.597-.27.106-.765.544-1.001.751l.095.041c-.11.153-.229.355-.021.442-.628-.064.604.891-.363.576.08-.103-.098-.249-.182-.361l.054.136c-.171.022-.17.297-.205.475a52.304 52.304 0 01-.312-.191c.084.316-.235.617-.41.95l.346-.019-.117.4-.175-.244c-.002.301-.506.29-.41.556-.589-.068-.875.591-1.314.954l.142.061c-.121.205-.4.406-.572.542l.203.313a10.86 10.86 0 01-.19-.082c-.557.711-1.43 1.157-1.644 2.109-.421-.059-.405.954-.676 1.173-.092-.095-.209-.137-.279-.007.207.098.417.243.305.469l-.238-.102.11-.122-.184.033-.013-.231c-.252.058-.509.417-.566.658-.457.146-.59 1.17-1.132 1.314-.172.513-1.229.841-1.024 1.587-.196-.011-.451-.02-.429.21a2.715 2.715 0 00-.095-.041c-.004.362-.221.615-.383 1.018.943.342.2.249-.029.72a.756.756 0 00-.243-.612c-.088.124-.186.409-.307.318-.219.564-.643 1.161-.748 1.012-.575.201.108-.953-.234-1.286-.313.482-.271-.072-.135-.34-.167-.043-.432-.172-.462.026l-.095-.041.286-.271-.326-.028c.039-.155.211-.291.361-.182-.104-.484-.53-.835-.811-1.253z">
+                  </path>
+                </g>
+              </svg>
+              CI/CD Integration
+              <svg aria-hidden="true" viewBox="0 0 1300 10" height="3" preserveAspectRatio="none"
+                class="absolute top-0 left-0 w-full h-[3px] fill-sky-600/20">
+                <g buffered-rendering="static">
+                  <path
+                    d="M1264.29 4.85c-1.04-.029-17.58-1.783-26.79-1.35-.37.018-11.97-.122-12.33-.146-.7-.048-1.76-.174-2.06-.13-9.7 1.458-20.01-.138-29.8.212-9.71.348-19.24.035-28.79-.08-4.81-.06-9 .034-13.18.402-.34.029-.71.141-.86.128-10.56-.803-22.39.909-32.63-.561-1.93-.278-4.38-.178-6.66-.143-.51.346-1.18.73-3.66.558-2.1-.146-3.84-.456-5.88-.648-2.58-.244-6.03-.718-7.52.087-1.25.683 4.71.299 5.18 1.013-2.88-.171-6.11-.238-8.47-.535-3.21-.406-5.99-.487-9.57-.22-1.65.123-4.45.18-5.58.01-7.74-1.166-15.7-.01-23.5-.135-6.53-.107-3.97.723-3.05 1.428-1.41-.191-2.41-.286-3.09-.428-2.27-.47-2.53-1.764-8.48-.661-4.25-.645-9.56-.795-14.69-1-6.03-.243-6.8-.045-6 1.369.22.042.64.087.62.123-.07.104-.31.203-.49.305l-.72.085.49-.116c.13-.131.16-.263.1-.396-3.27-.349-6.17-.766-9.09-1.221-6.85-1.064-12.261-.719-15.806.836-9.731-1.469-9.731-1.469-17.434.517-4.97-.687-9.437-1.73-16.304-1.557-4.087.102-7.494-.071-11.182-.133-6.645-.112-13.223-.139-19.763-.478-2.518-.13-3.623.404-4.689.771l.589.111-.635-.101c-6.199.61-10.777-1.021-16.977-.409-9.018-1.128-14.884-.299-20.2 1.371-3.734-1.341-9.221-1.92-15.964-1.453-5.702.392-12.726-.804-17.467.596-1.504.445-4.296.175-5.807-.166-5.16-1.164-6.5-.121-8.665.471-4.512.112-3.643-1.363-8.56-1.019-4.676.326-6.18 1.162-7.612 1.96-.118.066-.177.136-.269.202-.66.47-1.092 1.103-4.898.68-2.452-.274-3.243-.777-.405-1.202 1.471-.221 3.387-.438 2.047-.819-1.151-.326-3.708-.349-5.154-.169-2.968.367-5.002.348-7.755-.1-3.532-.574-8.535-.494-12.884-.693-2.393-.11-2.838.338-3.237.68-1.092.181-1.085.363-.006.546-1.55.231-2.642.197-3.499-.156-2.367-.976-4.166-1.891-12.366-1.196-3.512.298-9.031-.184-13.622-.331-.654-.021-1.459-.236-1.772-.206-8.58.776-17.121-.089-25.655.001-1.805.019-2.544.247-2.355.571.242.135 1.969.194.628.409l-.902-.37c-1.923-.233-3.885-.487-6.331-.332-5.022.318-9.456.205-14.145-.307-3.374-.367-7.71-.677-10.823.233-.857.25-1.831.068-2.831-.045-4.781-.533-5.54.019-4.192.647 1.36.637-1.047 1.236 1.373 1.883-1.615-.068-2.505-.056-2.832-.129-3.073-.675-.163-2.203-7.795-2.147-5.134.037-9.652-.871-15.015-.208-1.648.204-3.544-.149-5.317-.253-9.227-.536-9.371-.525-15.943 1.022-6.605-1.033-14.06-1.331-22.379-.846-1.929.113-2.701-.123-3.59-.345.177-.046.523-.099.484-.138-.111-.121-.582-.116-1.19.006-3.904.436-7.063 1.227-12.622.348-3.263-.518-8.56-.144-12.942-.48-3.021-.231-6.48.233-6.284 1.053 1.739.459 2.688.93.732 1.541-.359-.567-.654-1.04-.948-1.513-3.649-.587-8.403-.846-12.517-1.28-6.212-.655-13.465-.489-19.455.426l-.706.082.595-.106c-1.511-.356-4.002-.659-5.834-.427-6.624.839-12.713.036-19.01-.076-1.766-.408-3.545-.351-5.336-.005-2.839.004-5.677.008-8.515.01-1.288-.144-1.589-.104-.778.14-.288.125-.785.361-.844.357-8.102-.489-16.185-.884-24.386-.063-3.597-.759-6.232-.452-8.626.245-.255.076-1.131.146-1.595.125-17.991-.824-26.885-.888-39.12-.27-1.073.053-2.871.193-3.159.127-2.969-.703-5.369-.506-9.659-.249-2.956.176-7.534-.287-11.17.314-1.177.193-2.949.018-4.244-.14-7.553-.923-15.237-.827-23.582-.311-3.06.189-7.37.21-10.862-.148.196-.043.582-.093.549-.129-.111-.119-.549-.11-1.118.023-4.977-.072-10.705.559-14.642-.528-.275-.076-2.021-.078-2.04-.065-1.982 1.359-8.548.075-12.772.757-3.663.592-10.457-.454-15.336-.212-6.971.346-14.557-.346-20.985.523-.471.063-1.589.044-2.165-.014-7.73-.799-16.951.133-24.726-.729-1.766-.196-4.565-.217-6.703-.142-12.288.427-24.779.084-37.184.408-6.749.177-14.303-.027-21.202-.173-6.18-.13-11.994.044-17.951.02-12.033-.049-24.066.104-36.112-.082-5.591-.085-11.438.04-16.892.167-17.604.411-35.268.551-52.918.592-14.466.035-28.434.592-42.612.868-15.041.292-28.552 1.382-42.965 1.94-2.217.085-4.545.185-6.475.389-4.878.514-4.728 1.471.288 1.929 2.001.184 4.421.371 6.54.335 15.636-.27 31.128.168 46.679.283 22.784.169 45.359-.419 68.052-.504 29.755-.114 59.34-.708 89.278-.504 18.9.129 38.152-.092 57.196-.019 15.126.057 30.35-.175 45.45.322 10.921.361 21.816-.337 32.861-.17 35.484.532 71.073.004 106.596.294 27.159.222 54.318-.062 81.477-.05 17.435.007 34.876.382 52.304.345 15.257-.031 30.566-.035 45.771.02 25.936.094 51.976-.333 77.847.336 3.773.098 7.638.101 11.464.102 32.031.016 64.121-.19 96.086.085 36.184.309 72.374.154 108.499.415 19.004.136 38.139.053 56.986.416 21.008.404 42.128.031 62.908.456 23.6.483 47.32.509 70.85.622 41.9.2 83.75.739 125.69.698 6.32-.005 12.82.272 19.34.271 6.14-.001 11.83-.066 17.48-.712 7.09-.809 22.11-1.993 14.86-1.993-13.62.001-20.21-2.073-33.78-2.445z">
+                  </path>
+                </g>
+              </svg>
+            </li>
+
+            <svg aria-hidden="true" viewBox="0 0 1300 10" height="3" preserveAspectRatio="none"
+              class="absolute bottom-10 left-0 w-full h-[3px] fill-sky-600/20">
+              <g buffered-rendering="static">
+                <path
+                  d="M1264.29 4.85c-1.04-.029-17.58-1.783-26.79-1.35-.37.018-11.97-.122-12.33-.146-.7-.048-1.76-.174-2.06-.13-9.7 1.458-20.01-.138-29.8.212-9.71.348-19.24.035-28.79-.08-4.81-.06-9 .034-13.18.402-.34.029-.71.141-.86.128-10.56-.803-22.39.909-32.63-.561-1.93-.278-4.38-.178-6.66-.143-.51.346-1.18.73-3.66.558-2.1-.146-3.84-.456-5.88-.648-2.58-.244-6.03-.718-7.52.087-1.25.683 4.71.299 5.18 1.013-2.88-.171-6.11-.238-8.47-.535-3.21-.406-5.99-.487-9.57-.22-1.65.123-4.45.18-5.58.01-7.74-1.166-15.7-.01-23.5-.135-6.53-.107-3.97.723-3.05 1.428-1.41-.191-2.41-.286-3.09-.428-2.27-.47-2.53-1.764-8.48-.661-4.25-.645-9.56-.795-14.69-1-6.03-.243-6.8-.045-6 1.369.22.042.64.087.62.123-.07.104-.31.203-.49.305l-.72.085.49-.116c.13-.131.16-.263.1-.396-3.27-.349-6.17-.766-9.09-1.221-6.85-1.064-12.261-.719-15.806.836-9.731-1.469-9.731-1.469-17.434.517-4.97-.687-9.437-1.73-16.304-1.557-4.087.102-7.494-.071-11.182-.133-6.645-.112-13.223-.139-19.763-.478-2.518-.13-3.623.404-4.689.771l.589.111-.635-.101c-6.199.61-10.777-1.021-16.977-.409-9.018-1.128-14.884-.299-20.2 1.371-3.734-1.341-9.221-1.92-15.964-1.453-5.702.392-12.726-.804-17.467.596-1.504.445-4.296.175-5.807-.166-5.16-1.164-6.5-.121-8.665.471-4.512.112-3.643-1.363-8.56-1.019-4.676.326-6.18 1.162-7.612 1.96-.118.066-.177.136-.269.202-.66.47-1.092 1.103-4.898.68-2.452-.274-3.243-.777-.405-1.202 1.471-.221 3.387-.438 2.047-.819-1.151-.326-3.708-.349-5.154-.169-2.968.367-5.002.348-7.755-.1-3.532-.574-8.535-.494-12.884-.693-2.393-.11-2.838.338-3.237.68-1.092.181-1.085.363-.006.546-1.55.231-2.642.197-3.499-.156-2.367-.976-4.166-1.891-12.366-1.196-3.512.298-9.031-.184-13.622-.331-.654-.021-1.459-.236-1.772-.206-8.58.776-17.121-.089-25.655.001-1.805.019-2.544.247-2.355.571.242.135 1.969.194.628.409l-.902-.37c-1.923-.233-3.885-.487-6.331-.332-5.022.318-9.456.205-14.145-.307-3.374-.367-7.71-.677-10.823.233-.857.25-1.831.068-2.831-.045-4.781-.533-5.54.019-4.192.647 1.36.637-1.047 1.236 1.373 1.883-1.615-.068-2.505-.056-2.832-.129-3.073-.675-.163-2.203-7.795-2.147-5.134.037-9.652-.871-15.015-.208-1.648.204-3.544-.149-5.317-.253-9.227-.536-9.371-.525-15.943 1.022-6.605-1.033-14.06-1.331-22.379-.846-1.929.113-2.701-.123-3.59-.345.177-.046.523-.099.484-.138-.111-.121-.582-.116-1.19.006-3.904.436-7.063 1.227-12.622.348-3.263-.518-8.56-.144-12.942-.48-3.021-.231-6.48.233-6.284 1.053 1.739.459 2.688.93.732 1.541-.359-.567-.654-1.04-.948-1.513-3.649-.587-8.403-.846-12.517-1.28-6.212-.655-13.465-.489-19.455.426l-.706.082.595-.106c-1.511-.356-4.002-.659-5.834-.427-6.624.839-12.713.036-19.01-.076-1.766-.408-3.545-.351-5.336-.005-2.839.004-5.677.008-8.515.01-1.288-.144-1.589-.104-.778.14-.288.125-.785.361-.844.357-8.102-.489-16.185-.884-24.386-.063-3.597-.759-6.232-.452-8.626.245-.255.076-1.131.146-1.595.125-17.991-.824-26.885-.888-39.12-.27-1.073.053-2.871.193-3.159.127-2.969-.703-5.369-.506-9.659-.249-2.956.176-7.534-.287-11.17.314-1.177.193-2.949.018-4.244-.14-7.553-.923-15.237-.827-23.582-.311-3.06.189-7.37.21-10.862-.148.196-.043.582-.093.549-.129-.111-.119-.549-.11-1.118.023-4.977-.072-10.705.559-14.642-.528-.275-.076-2.021-.078-2.04-.065-1.982 1.359-8.548.075-12.772.757-3.663.592-10.457-.454-15.336-.212-6.971.346-14.557-.346-20.985.523-.471.063-1.589.044-2.165-.014-7.73-.799-16.951.133-24.726-.729-1.766-.196-4.565-.217-6.703-.142-12.288.427-24.779.084-37.184.408-6.749.177-14.303-.027-21.202-.173-6.18-.13-11.994.044-17.951.02-12.033-.049-24.066.104-36.112-.082-5.591-.085-11.438.04-16.892.167-17.604.411-35.268.551-52.918.592-14.466.035-28.434.592-42.612.868-15.041.292-28.552 1.382-42.965 1.94-2.217.085-4.545.185-6.475.389-4.878.514-4.728 1.471.288 1.929 2.001.184 4.421.371 6.54.335 15.636-.27 31.128.168 46.679.283 22.784.169 45.359-.419 68.052-.504 29.755-.114 59.34-.708 89.278-.504 18.9.129 38.152-.092 57.196-.019 15.126.057 30.35-.175 45.45.322 10.921.361 21.816-.337 32.861-.17 35.484.532 71.073.004 106.596.294 27.159.222 54.318-.062 81.477-.05 17.435.007 34.876.382 52.304.345 15.257-.031 30.566-.035 45.771.02 25.936.094 51.976-.333 77.847.336 3.773.098 7.638.101 11.464.102 32.031.016 64.121-.19 96.086.085 36.184.309 72.374.154 108.499.415 19.004.136 38.139.053 56.986.416 21.008.404 42.128.031 62.908.456 23.6.483 47.32.509 70.85.622 41.9.2 83.75.739 125.69.698 6.32-.005 12.82.272 19.34.271 6.14-.001 11.83-.066 17.48-.712 7.09-.809 22.11-1.993 14.86-1.993-13.62.001-20.21-2.073-33.78-2.445z">
+                </path>
+              </g>
+            </svg>
+          </ul>
+        </div>
+        <div class="mt-[50px]">
+          <div class="hero-txt">Enterprise-Ready
+            <p class="w-[95%] text-[19px] text-[#5e537c] font-normal pt-4">
+              Apps running on Fly Machines are KVM hardware-isolated, built on a memory-safe stack and running directly
+              on our&nbsp;own&nbsp;metal.
+            </p>
+          </div>
+          <div class="flex gap-[20px] pt-4">
+            <div><a href="#"
+                class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#952ae2] to-[#5c38df] px-5 py-3 text-center text-base font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Enterprise Features </a>
+            </div>
+            <div><a href="#"
+                class="inline-flex items-center justify-center rounded-full border border-[#5c38df]  px-5 py-3 text-center text-base font-medium text-[#281950] hover:shadow-inner-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">Fly.io
+                Security
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="w-full">
+        <div class="container-md ">
+          
+        </div>
+      </div> -->
+  <div class="w-full relative overflow-hidden	">
+    <div
+      class="rotate-3 absolute -inset-x-12 -top-6 h-12 bg-gradient-to-r from-sky-300 via-indigo-300 to-pink-300 blur-3xl">
+    </div>
+    <div class="container-md w-[1200px] m-auto ">
+      <section class="bg-white dark:bg-gray-900 ">
+        <div
+          class="gap-8 py-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:pt-[100px]  pb-[50px] lg:px-6">
+          <img class="w-full dark:hidden "
+            src="	https://fly.io/phx/ui/images/js-love-b469706c4be3625b972ee3fdfcb80687.png?vsn=d"
+            alt="dashboard image">
+          <img class="w-full hidden dark:block"
+            src="https://fly.io/phx/ui/images/fly-globe-cb332f77ddb429aa3ef4e0a2c6c592ba.png?vsn=d"
+            alt="dashboard image">
+          <div class="mt-4 md:mt-0">
+            <h2 class="mb-4 text-4xl tracking-tight text-[#281950] hero-txt"> Public Cloud Infrastructure. Modern
+              Platform Endorphins.</h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400 mb-4">The most flexible and powerful
+              compute platform on any public cloud. Fly Machines are hardware-virtualized containers, running on our own
+              hardware, that launch instantly and run exactly as long as you want them to — for a single HTTP request,
+              or for weeks of uptime.
+
+            </p>
+            <hr>
+          </div>
+
+        </div>
+        <div class="grid lg:grid-cols-3 flex gap-8 mb-[100px]">
+          <div class="">
+            <div class="w-full flex justify-between">
+              <div
+                class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-emerald-500/30 from-green-300/50 to-emerald-300/50 text-emerald-500 ring-emerald-500/35">
+
+                <svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; " viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <g buffered-rendering="static" fill-rule="evenodd">
+
+                    <path
+                      d="M16.697 16.808a9.28 9.28 0 002.339-9.535 9.368 9.368 0 00-2.866-4.228 1.527 1.527 0 00-.982-.356c-.829 0-1.512.673-1.512 1.49 0 .436.194.851.531 1.134a6.356 6.356 0 012.265 4.851c0 3.491-2.903 6.368-6.443 6.386h-.024c-3.552 0-6.474-2.881-6.474-6.383 0-1.848.814-3.609 2.23-4.82l.004-.004c.308-.282.484-.678.484-1.093 0-.818-.682-1.49-1.512-1.49-.347 0-.683.118-.952.333l-.004.004A9.314 9.314 0 00.5 10.177c0 2.367.91 4.648 2.546 6.381a9.566 9.566 0 006.948 2.98 9.568 9.568 0 006.703-2.73z"
+                      fill-opacity=".7"></path>
+                    <path
+                      d="M8.492 1.453v8.302c.002.818.684 1.49 1.513 1.49.264 0 .524-.069.754-.199.467-.266.755-.758.755-1.291V1.453C11.494.649 10.818 0 10.003 0c-.814 0-1.49.649-1.511 1.453z"
+                      fill-opacity=".3"></path>
+                    <path
+                      d="M5.468 5.614a6.34 6.34 0 00-1.937 4.553c0 3.502 2.922 6.383 6.474 6.383h.024c3.54-.018 6.443-2.895 6.443-6.386a6.357 6.357 0 00-2.265-4.851 1.482 1.482 0 01-.531-1.134c0-.817.683-1.49 1.512-1.49.359 0 .707.126.982.356a9.375 9.375 0 012.866 4.228 9.293 9.293 0 01-2.339 9.535 9.57 9.57 0 01-6.703 2.73 9.57 9.57 0 01-6.948-2.98A9.296 9.296 0 01.5 10.177 9.317 9.317 0 013.485 3.36c.119.124.26.21.293.229l.003.008-.002-.008h-.001l-.136-.371.009-.008.115.328.013.051.006.004-.019-.055a7.563 7.563 0 00-.098-.343l.113-.098.004-.004c.269-.215.605-.333.952-.333.83 0 1.512.672 1.512 1.49 0 .415-.176.811-.484 1.093l-.004.004a3.447 3.447 0 00-.112.099c-.066-.212-.147-.433-.207-.462l.18.486-.002.001-.19-.49c-.007 0-.013.003-.019.009-.228.228-.104.459.057.624zm4.447 11.435l.117.001c3.815-.019 6.94-3.124 6.94-6.886v-.001a6.86 6.86 0 00-2.443-5.233.979.979 0 01-.353-.751c0-.545.459-.99 1.012-.99h.001c.241 0 .475.084.66.239a8.869 8.869 0 012.712 4.001 8.792 8.792 0 01-2.213 9.021l-.001.001a9.07 9.07 0 01-6.352 2.587h-.002a9.066 9.066 0 01-6.584-2.824A8.792 8.792 0 011 10.177a8.818 8.818 0 013.105-6.699h-.001c.18-.141.403-.218.633-.218.554 0 1.012.444 1.012.99a.98.98 0 01-.322.724 6.849 6.849 0 00-2.396 5.193c0 3.745 3.097 6.834 6.884 6.882zM8.492 1.453v8.302c.002.818.684 1.49 1.513 1.49.264 0 .524-.069.754-.199.467-.266.755-.758.755-1.291V1.453C11.494.649 10.818 0 10.003 0c-.814 0-1.49.649-1.511 1.453zm.5.008C9.009.927 9.462.5 10.003.5c.54 0 .991.423 1.011.954v8.301a.987.987 0 01-.502.856 1.036 1.036 0 01-.507.134 1.008 1.008 0 01-1.013-.991V1.461z">
+                    </path>
+
+                  </g>
+                </svg>
+              </div>
+              <div class="w-[100%] pl-[50px] text-[22px] feature">Get Right in Your Users’ Faces
+                <p class="pt-4 text-[17px] text-[#5c517c]">
+                  Deploy in 35 regions, from Sydney to São Paulo, for sub-100ms response times and native-app feel no
+                  matter where your users are.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <div class="">
+              <div class="w-full flex justify-between">
+                <div
+                  class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-amber-500/30 from-yellow-200/75 to-orange-200/75 text-amber-500 ring-amber-400/60">
+
+                  <svg role="img" class="" style="pointer-events: none; width: 24px; height: 24px; " viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <g bufferred-rendering="static">
+
+                      <path
+                        d="M5.34 7.595L1.331 9.436a.564.564 0 000 1.023l4.009 1.842 1.841 4.008a.564.564 0 001.023 0l1.842-4.008 4.009-1.842a.564.564 0 000-1.023l-4.009-1.841-1.842-4.009a.562.562 0 00-1.023 0L5.34 7.595z"
+                        fill-opacity=".7"></path>
+                      <path
+                        d="M14.476 3.168l-2.004.921a.28.28 0 000 .511l2.004.921.921 2.004a.282.282 0 00.511 0l.921-2.004 2.004-.921a.282.282 0 000-.511l-2.004-.921-.921-2.004a.28.28 0 00-.511 0l-.921 2.004zM14.476 14.479l-2.004.921a.282.282 0 000 .511l2.004.921.921 2.004a.282.282 0 00.511 0l.921-2.004 2.004-.921a.28.28 0 000-.511l-2.004-.921-.921-2.004a.28.28 0 00-.511 0l-.921 2.004z"
+                        fill-opacity=".3"></path>
+                      <path
+                        d="M14.476 14.479l-2.004.921a.282.282 0 000 .511l2.004.921.921 2.004a.283.283 0 00.511 0l.921-2.004 2.004-.921a.28.28 0 000-.511l-2.004-.921-.921-2.004a.28.28 0 00-.511 0l-.921 2.004zm1.177-1.363l.722 1.572c.05.108.137.195.245.245l1.572.722-1.572.723a.503.503 0 00-.245.245l-.723 1.572-.722-1.572a.503.503 0 00-.245-.245l-1.572-.723 1.572-.722a.503.503 0 00.245-.245l.723-1.572zM5.34 7.595L1.331 9.436a.563.563 0 000 1.023l4.009 1.842 1.841 4.008a.563.563 0 001.023 0l1.842-4.008 4.009-1.842a.563.563 0 000-1.023l-4.009-1.841-1.842-4.009a.563.563 0 00-1.023 0L5.34 7.595zm.209.454a.503.503 0 00.245-.245l1.842-4.011a.062.062 0 01.057-.036c.024 0 .046.014.056.036l1.843 4.011a.5.5 0 00.245.245l4.007 1.841c.023.01.037.033.037.058a.062.062 0 01-.037.057l-4.007 1.842a.503.503 0 00-.245.245L7.75 16.098a.062.062 0 01-.057.037.063.063 0 01-.058-.037l-1.841-4.006a.503.503 0 00-.245-.245l-4.007-1.842a.062.062 0 01-.037-.057c0-.025.014-.048.037-.058l4.007-1.841zm8.927-4.881l-2.004.921a.28.28 0 000 .511l2.004.921.921 2.004a.283.283 0 00.511 0l.921-2.004 2.004-.921a.282.282 0 000-.511l-2.004-.921-.921-2.004a.28.28 0 00-.511 0l-.921 2.004zm1.177-1.363l.722 1.572c.05.108.137.195.245.245l1.572.723-1.572.722a.503.503 0 00-.245.245l-.723 1.572-.722-1.572a.503.503 0 00-.245-.245l-1.572-.722 1.572-.723a.503.503 0 00.245-.245l.723-1.572z">
+                      </path>
+
+                    </g>
+                  </svg>
+                </div>
+                <div class="w-[100%] pl-[50px] text-[22px] feature">Get Right in Your Users’ Faces
+                  <p class="pt-4 text-[17px] text-[#5c517c]">
+                    Deploy in 35 regions, from Sydney to São Paulo, for sub-100ms response times and native-app feel no
+                    matter where your users are.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-between">
+            <div
+              class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-blue-500/30 from-sky-300/50 to-blue-300/50 text-blue-500 ring-blue-500/30">
+              <svg role="img" class="" viewBox="0 0 20 20" style="pointer-events: none; width: 24px; height: 24px; ;"
+                fill="currentColor">
+                <g buffered-rendering="static" fill-rule="evenodd">
+
+
+                  <path
+                    d="M17.026 5.903a2.924 2.924 0 00-2.923-2.923H5.897a2.924 2.924 0 00-2.923 2.923v8.205a2.925 2.925 0 002.923 2.923h8.206a2.925 2.925 0 002.923-2.923V5.903zm-2.329 0v8.205a.595.595 0 01-.594.594H5.897a.595.595 0 01-.594-.594V5.903c0-.328.267-.594.594-.594h8.206c.327 0 .594.266.594.594z"
+                    fill-opacity=".7"></path>
+                  <path
+                    d="M13.087 7.659a.741.741 0 00-.741-.74H7.654a.741.741 0 00-.741.74v4.693c0 .408.332.74.741.74h4.692a.741.741 0 00.741-.74V7.659z"
+                    fill-opacity=".5"></path>
+                  <path
+                    d="M8.619 17.031H6.29v1.81a1.164 1.164 0 002.329 0v-1.81zm5.091 0h-2.329v1.81a1.165 1.165 0 002.329 0v-1.81zm3.316-5.645v2.33h1.809a1.166 1.166 0 000-2.33h-1.809zm-14.052 2.33v-2.33H1.165a1.166 1.166 0 000 2.33h1.809zm14.052-7.421v2.33h1.809a1.166 1.166 0 000-2.33h-1.809zM2.974 8.625v-2.33H1.165a1.166 1.166 0 000 2.33h1.809zm8.407-5.645h2.329V1.159a1.164 1.164 0 00-2.329 0V2.98zm-5.091 0h2.329V1.159a1.165 1.165 0 00-2.329 0V2.98z"
+                    fill-opacity=".3"></path>
+                  <path
+                    d="M11.381 2.944H8.619V1.168a1.169 1.169 0 00-2.336 0v1.776h-.374a2.964 2.964 0 00-2.962 2.963v.376H1.168a1.168 1.168 0 000 2.336h1.779v2.762H1.168a1.169 1.169 0 000 2.336h1.779v.371a2.964 2.964 0 002.962 2.963h.374v1.781a1.168 1.168 0 002.336 0v-1.781h2.762v1.781a1.169 1.169 0 002.336 0v-1.781h.374a2.964 2.964 0 002.962-2.963v-.371h1.779a1.168 1.168 0 000-2.336h-1.779V8.619h1.779a1.169 1.169 0 000-2.336h-1.779v-.376a2.964 2.964 0 00-2.962-2.963h-.374V1.168a1.168 1.168 0 00-2.336 0v1.776zm-3.265.503h3.768V1.168a.666.666 0 011.331 0v2.279h.876a2.46 2.46 0 012.46 2.46v.878h2.281a.666.666 0 010 1.331h-2.281v3.768h2.281a.666.666 0 010 1.331h-2.281v.873a2.46 2.46 0 01-2.46 2.46h-.876v2.284a.666.666 0 01-1.331 0v-2.284H8.116v2.284a.666.666 0 01-1.331 0v-2.284h-.876a2.46 2.46 0 01-2.46-2.46v-.873H1.168a.666.666 0 010-1.331h2.281V8.116H1.168a.666.666 0 010-1.331h2.281v-.878a2.46 2.46 0 012.46-2.46h.876V1.168a.666.666 0 011.331 0v2.279zm7.105 2.398a1.07 1.07 0 00-1.069-1.069H5.848a1.07 1.07 0 00-1.069 1.069v8.305c0 .59.479 1.068 1.069 1.068h8.304c.59 0 1.069-.478 1.069-1.068V5.845zm-.502 0a.567.567 0 00-.567-.566H5.848a.567.567 0 00-.567.566v8.305c0 .312.254.566.567.566h8.304a.567.567 0 00.567-.566V5.845zm-1.705 1.862c0-.4-.324-.724-.723-.724H7.709a.724.724 0 00-.723.724v4.581c0 .4.324.724.723.724h4.582a.724.724 0 00.723-.724V7.707zm-.502 0v4.581a.221.221 0 01-.221.221H7.709a.221.221 0 01-.221-.221V7.707c0-.122.099-.221.221-.221h4.582c.122 0 .221.099.221.221z">
+                  </path>
+
+                </g>
+              </svg>
+            </div>
+            <div class="w-[100%] pl-[50px] text-[22px] feature">Get Right in Your Users’ Faces
+              <p class="pt-4 text-[17px] text-[#5c517c]">
+                Deploy in 35 regions, from Sydney to São Paulo, for sub-100ms response times and native-app feel no
+                matter where your users are.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="w-full bg-gradient-to-r from-[#952ae2] to-[#5c38df] pt-[80px] pb-[80px]">
+    <div class="container-md w-[1200px] m-auto flex">
+      <p class="grid grid-cols-2">
+      <div class="w-[50%] mr-[20px] text-[36px] text-white">
+        <h1>Use the Tech You Love</h1>
+        <p class="text-[19px] pt-4 text-[#ceb3f2]">Build with your favorite framework. No Dockerfile? No problem: our
+          CLI gener1ates containers for most popular frameworks, including Rails, Phoenix, Django, Node, Laravel, and
+        </p>
+        <span
+          class="text-[15px] px-5 py-3 border border-[] rounded-full hover:bg-[#9959ee] transition-all duration-300">Learn
+          More</span>
+      </div>
+      <div class="grid grid-cols-3 w-[50%] gap-[10px] h-[300px] flex-wrap">
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+        <div
+          class="card border border-[white] rounded-xl items-center flex justify-center font-bold text-white hover:bg-[#9959ee] transition-all duration-300">
+          Phoenix</div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full">
+    <div class="container w-[1200px] m-auto">
+      <div class="w-full relative overflow-hidden	">
+        <div class="container-md w-[1200px] m-auto ">
+          <section class="bg-white dark:bg-gray-900 ">
+            <div
+              class="gap-8 py-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:pt-[100px]  pb-[50px] lg:px-6">
+              <img class="w-full hidden dark:block"
+                src="	https://fly.io/phx/ui/images/better-together-bg-630f84dc36727cb3216fe4536c3687db.png?vsn=d"
+                alt="dashboard image">
+              <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight text-[#281950] hero-txt">Developer-Focused Public Cloud</h2>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400 mb-4">Help us build the next
+                  public cloud. No, seriously. Is your product something devs can take advantage of to ship better apps?
+                  Work with us.
+                </p>
+                <div><a href="#"
+                    class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#952ae2] to-[#5c38df] px-5 py-3 text-center text-base font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Enterprise Features </a>
+                </div>
+              </div>
+              <div class="w-88">
+                <img class="w-full dark:hidden items-center"
+                  src="	https://fly.io/phx/ui/images/better-together-bg-630f84dc36727cb3216fe4536c3687db.png?vsn=d"
+                  alt="dashboard image">
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="w-full bg-[#1d1438]">
+    <div class="container-md w-[1200px] m-auto">
+      <footer class="bg-[#1d1438] dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div class="md:flex md:justify-between pt-[60px]">
+            <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                <a href="/" class="justify-self-start" aria-label="Fly">
+
+                  <svg aria-labelledby="title-GAvN2mPo4oF6prvxdescription-GAvN2mPo9tt6prwB" class=""
+                    style="pointer-events: none; width: auto; height: 36px;" role="img" aria-hidden="true"
+                    viewBox="0 0 259 84" fill-rule="evenodd">
+                    <title id="title-GAvN2mPpD0Z6prwR">
+
+
+
+                    </title>
+                    <desc id="description-GAvN2mPpG4Z6prwh">
+
+
+
+                    </desc>
+
+                    <g buffered-rendering="static">
+
+                      <path
+                        d="M57.413 10.134h9.454c8.409 0 15.236 6.827 15.236 15.236v33.243c0 8.409-6.827 15.236-15.236 15.236h-.745c-4.328-.677-6.205-1.975-7.655-3.072l-12.02-9.883a1.692 1.692 0 0 0-2.128 0l-3.905 3.211-10.998-9.043a1.688 1.688 0 0 0-2.127 0L12.01 68.503c-3.075 2.501-5.109 2.039-6.428 1.894C2.175 67.601 0 63.359 0 58.613V25.37c0-8.409 6.827-15.236 15.237-15.236h9.433l-.017.038-.318.927-.099.318-.428 1.899-.059.333-.188 1.902-.025.522-.004.183.018.872.043.511.106.8.135.72.16.663.208.718.54 1.52.178.456.94 1.986.332.61 1.087 1.866.416.673 1.517 2.234.219.296 1.974 2.569.638.791 2.254 2.635.463.507 1.858 1.999.736.762 1.216 1.208-.244.204-.152.137c-.413.385-.805.794-1.172 1.224a10.42 10.42 0 0 0-.504.644 8.319 8.319 0 0 0-.651 1.064 6.234 6.234 0 0 0-.261.591 5.47 5.47 0 0 0-.353 1.606l-.007.475a5.64 5.64 0 0 0 .403 1.953 5.44 5.44 0 0 0 1.086 1.703c.338.36.723.674 1.145.932.359.22.742.401 1.14.539a6.39 6.39 0 0 0 2.692.306h.005a6.072 6.072 0 0 0 2.22-.659c.298-.158.582-.341.848-.549a5.438 5.438 0 0 0 1.71-2.274c.28-.699.417-1.446.405-2.198l-.022-.393a5.535 5.535 0 0 0-.368-1.513 6.284 6.284 0 0 0-.285-.618 8.49 8.49 0 0 0-.67-1.061 11.022 11.022 0 0 0-.354-.453 14.594 14.594 0 0 0-1.308-1.37l-.329-.28.557-.55 2.394-2.5.828-.909 1.287-1.448.837-.979 1.194-1.454.808-1.016 1.187-1.587.599-.821.85-1.271.708-1.083 1.334-2.323.763-1.524.022-.047.584-1.414a.531.531 0 0 0 .02-.056l.629-1.962.066-.286.273-1.562.053-.423.016-.259.019-.978-.005-.182-.05-.876-.062-.68-.31-1.961c-.005-.026-.01-.052-.018-.078l-.398-1.45-.137-.403-.179-.446Zm4.494 41.455a3.662 3.662 0 0 0-3.61 3.61 3.663 3.663 0 0 0 3.61 3.609 3.665 3.665 0 0 0 3.611-3.609 3.663 3.663 0 0 0-3.611-3.61Z"
+                        fill="url(#mkh_Radial1)"></path>
+
+                      <path
+                        d="M35.639 72.544l-.637.535a3.332 3.332 0 01-2.09.762H15.235a15.176 15.176 0 01-9.654-3.451c1.319.145 3.353.607 6.428-1.894l15.277-13.44a1.693 1.693 0 012.127 0l10.997 9.042 3.904-3.21c.619-.5 1.51-.5 2.128 0l12.019 9.882c1.45 1.097 3.327 2.394 7.654 3.071H58.12a3.394 3.394 0 01-1.963-.654l-.14-.108-.593-.493a1.247 1.247 0 00-.158-.159c-.672-.563-9.187-7.617-9.187-7.617a1 1 0 00-1.281.002s.021.026-9.038 7.615a1.12 1.12 0 00-.121.117zm26.262-20.96a3.678 3.678 0 00-3.61 3.609 3.68 3.68 0 003.61 3.609 3.68 3.68 0 003.61-3.609 3.678 3.678 0 00-3.61-3.609zM38.566 40.648L37.35 39.44l-.736-.762-1.858-1.999-.463-.507-2.253-2.634-.638-.791-1.974-2.569-.219-.296-1.517-2.234-.416-.673-1.087-1.866-.332-.61-.94-1.985-.178-.456-.539-1.52-.208-.718-.16-.663-.135-.72-.106-.8-.043-.511-.018-.872.004-.183.025-.522.188-1.901.059-.333.428-1.899.098-.318.318-.927.102-.24.506-1.112.351-.662.489-.806.487-.718.347-.456.4-.482.44-.484.377-.378.918-.808.671-.549c.016-.014.033-.026.05-.038l.794-.537.631-.402 1.198-.631c.018-.011.039-.02.058-.029l1.698-.705.157-.059 1.51-.442.638-.143.862-.173.572-.087.877-.109.598-.053 1.187-.063.465-.005.881.018.229.013 1.276.106 1.687.238.195.041 1.668.415.49.146.544.188.663.251.524.222.77.363.485.249.872.512.325.2 1.189.868.341.296.828.754.041.041.703.754.242.273.825 1.096.168.262.655 1.106.197.379.369.825.386.963.137.403.398 1.45a.89.89 0 01.018.078l.31 1.961.062.679.05.876.005.182-.019.978-.016.259-.053.423-.273 1.562-.066.286-.629 1.962a.626.626 0 01-.02.056l-.584 1.414-.022.047-.763 1.523-1.334 2.323-.708 1.083-.849 1.271-.599.821-1.187 1.587-.808 1.016-1.194 1.453-.837.979-1.287 1.448-.828.909-2.394 2.5-.556.55.328.28c.465.428.902.885 1.308 1.37.122.148.24.299.354.453.249.336.473.691.67 1.06.106.2.201.407.285.618.191.484.32.996.368 1.513l.022.393c.012.752-.125 1.5-.405 2.198a5.438 5.438 0 01-1.71 2.274c-.266.208-.55.391-.848.549a6.08 6.08 0 01-2.219.659h-.005a6.403 6.403 0 01-2.692-.306 5.882 5.882 0 01-1.14-.539 5.523 5.523 0 01-1.145-.932 5.458 5.458 0 01-1.086-1.703 5.662 5.662 0 01-.403-1.953l.007-.475a5.47 5.47 0 01.353-1.606c.077-.202.164-.399.261-.591.19-.37.408-.725.651-1.063.159-.221.328-.436.504-.644.367-.43.759-.839 1.172-1.224l.152-.137.244-.204z"
+                        class="fill-transparent"></path>
+                      <path
+                        d="M35.002 73.079l9.796-8.267a1 1 0 011.281-.002l9.938 8.269c.604.492 1.36.761 2.139.762h-25.28c.776 0 1.527-.269 2.126-.762zM41.1 43.568l.096.028c.031.015.057.036.085.055l.08.071c.198.182.39.373.575.569.13.139.257.282.379.43.155.187.3.383.432.587.057.09.11.181.16.276.043.082.082.167.116.253.06.15.105.308.119.469l-.003.302a1.726 1.726 0 01-.817 1.343 2.333 2.333 0 01-.994.327l-.373.011-.315-.028a2.398 2.398 0 01-.433-.105 2.07 2.07 0 01-.41-.192l-.246-.18a1.685 1.685 0 01-.56-.96 2.418 2.418 0 01-.029-.19l-.009-.288c.005-.078.017-.155.034-.232.043-.168.105-.331.183-.486.101-.194.216-.381.344-.559.213-.288.444-.562.691-.821.159-.168.322-.331.492-.488l.121-.109c.084-.055.085-.055.181-.083h.101zM40.481 3.42l.039-.003v33.665l-.084-.155a94.101 94.101 0 01-3.093-6.267 67.257 67.257 0 01-2.099-5.255 41.665 41.665 0 01-1.265-4.326c-.265-1.163-.469-2.343-.553-3.535a16.923 16.923 0 01-.029-1.528c.008-.444.026-.887.054-1.33.044-.696.115-1.391.217-2.081.081-.543.181-1.084.304-1.619.098-.425.212-.847.342-1.262.188-.6.413-1.186.675-1.758.096-.206.199-.411.307-.612.65-1.204 1.532-2.313 2.687-3.054a5.609 5.609 0 012.498-.88zm4.365.085l2.265.646c1.049.387 2.059.891 2.987 1.521a11.984 11.984 0 013.212 3.204c.502.748.918 1.555 1.243 2.398.471 1.247.763 2.554.866 3.882.03.348.047.697.054 1.046.008.324.006.649-.02.973-.064.725-.2 1.442-.407 2.14a17.03 17.03 0 01-.587 1.684c-.28.685-.591 1.357-.932 2.013-.754 1.457-1.623 2.852-2.553 4.201a65.451 65.451 0 01-3.683 4.806 91.02 91.02 0 01-4.417 4.896 93.66 93.66 0 002.907-5.949c.5-1.124.971-2.26 1.414-3.407.487-1.26.927-2.537 1.317-3.83.29-.969.546-1.948.757-2.938.181-.849.323-1.707.411-2.57.074-.72.101-1.444.083-2.166a30.867 30.867 0 00-.049-1.325c-.106-1.775-.376-3.545-.894-5.248a15.341 15.341 0 00-.714-1.892c-.663-1.444-1.588-2.793-2.84-3.778l-.42-.307z"
+                        fill="white"></path>
+
+                      <path
+                        d="M179.213 64.297l-10.751-23.015c-.898-1.917-1.433-2.618-2.331-3.431l-.874-.788c-.697-.676-1.155-1.302-1.155-2.045 0-1.064.843-1.96 2.378-1.96h9.334c1.465 0 2.378.762 2.378 1.9 0 .635-.292 1.111-.661 1.578-.438.555-1.008 1.096-1.008 2.082 0 .618.18 1.234.527 2.021l6.416 15.025 5.755-14.647c.354-.974.596-1.832.596-2.519 0-1.069-.581-1.505-1.029-1.983-.39-.415-.702-.854-.702-1.557 0-1.149.935-1.9 2.193-1.9h5.748c1.612 0 2.378.834 2.378 1.9 0 .682-.393 1.314-1.166 1.996l-.813.668c-1.132.925-1.656 2.263-2.251 3.647l-8.716 20.998c-1.03 2.455-2.563 5.863-4.905 8.659-2.379 2.84-5.587 5.048-9.932 5.048-3.638 0-5.84-1.737-5.84-4.24 0-2.293 1.696-4.12 3.924-4.12 1.22 0 1.855.576 2.499 1.169.532.489 1.072.991 2.137.991.988 0 1.908-.418 2.742-1.093 1.274-1.03 2.341-2.652 3.129-4.384zm63.175-.082c4.839 0 8.804-1.658 11.897-4.967 3.09-3.304 4.636-7.281 4.636-11.931 0-4.539-1.469-8.268-4.396-11.191-2.926-2.921-6.723-4.388-11.396-4.388-4.92 0-8.944 1.597-12.077 4.78-3.135 3.186-4.703 7.045-4.703 11.578 0 4.493 1.496 8.301 4.483 11.425 2.99 3.126 6.84 4.694 11.556 4.694zm-40.921-.36c2.798 0 4.788-1.884 4.788-4.6 0-2.652-2.055-4.54-4.788-4.54-2.863 0-4.912 1.891-4.912 4.54 0 2.713 2.05 4.6 4.912 4.6zm9.964-4.305l.681-.72c.81-.787 1.071-1.582 1.071-3.774V42.097c0-1.895-.258-2.741-1.062-3.465l-.801-.718c-.785-.693-1.043-1.124-1.043-1.816 0-.984.763-1.791 1.99-2.071l5.44-1.32c.52-.126 1.107-.249 1.562-.249.626 0 1.138.206 1.497.563.36.358.572.873.572 1.517v20.518c0 2.069.251 3.031 1.115 3.758a.359.359 0 01.039.039l.608.708c.764.743 1.081 1.236 1.081 1.914 0 1.209-.912 1.9-2.377 1.9h-9.211c-1.396 0-2.316-.687-2.316-1.9 0-.681.317-1.178 1.154-1.925zm-61.567.001l.681-.721c.811-.787 1.071-1.582 1.071-3.774V27.999c0-1.835-.194-2.736-1.053-3.459l-.822-.796c-.709-.689-.968-1.116-.968-1.805 0-.985.767-1.789 1.927-2.07l5.378-1.32c.521-.126 1.107-.249 1.563-.249.621 0 1.147.187 1.522.542.376.356.608.885.608 1.598v34.616c0 2.074.258 2.981 1.125 3.766l.694.734c.769.748 1.025 1.238 1.025 1.919 0 .502-.153.907-.426 1.216-.385.435-1.03.684-1.89.684h-9.21c-.86 0-1.505-.249-1.891-.684-.272-.309-.425-.714-.425-1.216 0-.682.253-1.176 1.091-1.924zm-25.079-13.934v9.319c0 1.404.278 2.701 1.435 3.768l.748.726c.838.813 1.093 1.3 1.093 2.045 0 1.138-.913 1.9-2.378 1.9h-10.385c-1.465 0-2.377-.762-2.377-1.9 0-.884.259-1.303 1.097-2.049l.745-.724c.868-.786 1.434-1.857 1.434-3.766V30.039c0-1.517-.336-2.758-1.435-3.769l-.749-.726c-.77-.747-1.092-1.238-1.092-1.985 0-1.206.915-1.96 2.377-1.96h27.817c1.063 0 1.997.237 2.594.822.415.407.68.981.71 1.778l.433 6.421c.043.803-.194 1.472-.657 1.885-.319.284-.748.454-1.288.454-.681 0-1.203-.257-1.669-.701-.419-.399-.792-.959-1.213-1.618-1.016-1.624-1.489-2.208-2.572-2.967-1.507-1.112-3.803-1.494-8.145-1.494-2.505 0-4.086.109-5.082.366-.644.166-1.016.382-1.215.699-.204.324-.226.734-.226 1.235v12.618h6.523c1.561 0 2.659-.282 3.931-2.021l.007-.01c.51-.649.879-1.127 1.23-1.444.409-.37.802-.545 1.323-.545a1.9 1.9 0 011.883 1.901v8.699c0 1.165-.908 1.96-1.883 1.96-.485 0-.879-.173-1.289-.535-.353-.31-.723-.775-1.203-1.396-1.392-1.802-2.375-2.089-3.999-2.089h-6.523zm110.214-.22c0-3.121.68-5.364 2.089-6.713 1.392-1.332 2.888-2.006 4.496-2.006 2.212 0 4.205 1.238 6.003 3.672 1.837 2.489 2.746 5.853 2.746 10.086 0 3.124-.682 5.388-2.093 6.776-1.391 1.369-2.886 2.063-4.493 2.063-2.212 0-4.204-1.248-6.002-3.701-1.838-2.51-2.746-5.904-2.746-10.177zm-18.202-16.878c2.804 0 4.788-1.578 4.788-4.3 0-2.658-1.982-4.24-4.788-4.24-2.871 0-4.851 1.583-4.851 4.24 0 2.656 1.981 4.3 4.851 4.3z"
+                        class="fill-white"></path>
+
+                    </g>
+                    <defs>
+                      <radialGradient id="mkh_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(43.593 41.714) scale(59.4764)">
+                        <stop offset="0" stop-color="#ba7bf0"></stop>
+                        <stop offset=".45" stop-color="#996bec"></stop>
+                        <stop offset="1" stop-color="#5046e4"></stop>
+                      </radialGradient>
+                    </defs>
+
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="w-[80%] grid grid-cols-2 gap-8 sm:gap-6 lg:grid-cols-5">
+              <div class="">
+                <h2 class="mb-3 text-[12px] font-semibold text-white uppercase dark:text-white">Company</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">About</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Pricing</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Jobs</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="">
+                <h2 class="mb-3 text-[12px] font-semibold text-white uppercase dark:text-white">Articles</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Blog</a>
+                  </li>
+                  <li class="">
+                    <a href="" class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">
+                      Phoenix Files
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="" class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">
+                      Laravel Bytes
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="" class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">
+
+                      Ruby Dispatch
+
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="" class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">
+
+                      Django Beats
+
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="" class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">
+
+                      JavaScript Journal
+
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="">
+                <h2 class="mb-3 text-[12px] font-semibold text-white uppercase dark:text-white">Resources</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Docs</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Customers</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Support</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200"> Metrics
+                      Support</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Status</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="">
+                <h2 class="mb-3 text-[12px] font-semibold text-white uppercase dark:text-white">Contact</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">GitHub</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Twitter
+                      </a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Community</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="">
+                <h2 class="mb-3 text-[12px] font-semibold text-white uppercase dark:text-white">Legal</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Security</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Privacy policy</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Terms of service</a>
+                  </li>
+                  <li class="">
+                    <a href=""
+                      class="text-[14px] text-[#A39Ac1] hover:text-[#8b5cf6] transition-all duration-200">Acceptable Use Policy</a>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="w-full">
+            <span class="text-sm text-[#A39Ac1] text-center dark:text-gray-400 flex items-center justify-center pt-[50px]">Copyright © 2024 Fly.io
+            </span>
+            
+      </footer>
+
+    </div>
+  </div>
+</body>
+
+</html>
+<div class="w-full relative overflow-hidden">
+  <div class="rotate-3 absolute -inset-x-12 -top-6 h-12 bg-gradient-to-r from-sky-300 via-indigo-300 to-pink-300 blur-3xl"></div>
+  <div class="container w-full mx-auto px-4">
+    <section class="bg-white dark:bg-gray-900">
+      <div class="gap-8 py-8 items-center md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:pt-[100px] pb-[50px]">
+        <img class="w-full dark:hidden" src="https://fly.io/phx/ui/images/js-love-b469706c4be3625b972ee3fdfcb80687.png?vsn=d" alt="dashboard image">
+        <img class="w-full hidden dark:block" src="https://fly.io/phx/ui/images/fly-globe-cb332f77ddb429aa3ef4e0a2c6c592ba.png?vsn=d" alt="dashboard image">
+        <div class="mt-4 md:mt-0">
+          <h2 class="mb-4 text-4xl tracking-tight text-[#281950] hero-txt"> Public Cloud Infrastructure. Modern Platform Endorphins.</h2>
+          <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400 mb-4">The most flexible and powerful compute platform on any public cloud...</p>
+          <hr>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-[100px]">
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center">
+          <div class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-emerald-500/30 from-green-300/50 to-emerald-300/50 text-emerald-500 ring-emerald-500/35">
+            <svg role="img" style="pointer-events: none; width: 24px; height: 24px;" viewBox="0 0 20 20" fill="currentColor">
+              <!-- SVG Path -->
+            </svg>
+          </div>
+          <div class="w-full pl-[50px] text-[22px] feature text-center">
+            <p class="pt-4 text-[17px] text-[#5c517c]">Deploy in 35 regions, from Sydney to São Paulo...</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center">
+          <div class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-amber-500/30 from-yellow-200/75 to-orange-200/75 text-amber-500 ring-amber-400/60">
+            <svg role="img" style="pointer-events: none; width: 24px; height: 24px;" viewBox="0 0 20 20" fill="currentColor">
+              <!-- SVG Path -->
+            </svg>
+          </div>
+          <div class="w-full pl-[50px] text-[22px] feature text-center">
+            <p class="pt-4 text-[17px] text-[#5c517c]">Deploy in 35 regions, from Sydney to São Paulo...</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center">
+          <div class="flex justify-center items-center shrink-0 bg-gradient-to-br ring-1 shadow-xl rounded-xl w-12 h-12 shadow-blue-500/30 from-sky-300/50 to-blue-300/50 text-blue-500 ring-blue-500/30">
+            <svg role="img" style="pointer-events: none; width: 24px; height: 24px;" viewBox="0 0 20 20" fill="currentColor">
+              <!-- SVG Path -->
+            </svg>
+          </div>
+          <div class="w-full pl-[50px] text-[22px] feature text-center">
+            <p class="pt-4 text-[17px] text-[#5c517c]">Deploy in 35 regions, from Sydney to São Paulo...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
